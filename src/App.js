@@ -1,9 +1,14 @@
 import React from 'react'
+import styled from 'styled-components/macro'
 
 export default function App() {
   return (
     <div>
-      <h1>Braendstof – Die gesunde Snackbox für's Büro</h1>
+      <TitleStyled>Braendstof – Die gesunde Snackbox für's Büro</TitleStyled>
     </div>
   )
 }
+
+const TitleStyled = styled.h1`
+  color: crimson;
+`
