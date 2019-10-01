@@ -1,14 +1,10 @@
 import React from 'react'
-import styled from 'styled-components/macro'
+import SnackList from './SnackList'
 
 export default function App() {
   return (
     <div>
-      <TitleStyled>Braendstof – Die gesunde Snackbox für's Büro</TitleStyled>
+      <SnackList />
     </div>
   )
 }
-
-const TitleStyled = styled.h1`
-  color: crimson;
-`
