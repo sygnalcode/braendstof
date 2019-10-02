@@ -1,0 +1,21 @@
+[
+  {
+    "paleo": "Paleo",
+    "raw": "Raw",
+    "vegan": "Vegan",
+    "lowsugar": "Low sugar",
+    "lowcarb": "Low carb",
+    "soyfree": "Sojafrei",
+    "grainfree": "Getreidefrei",
+    "glutenfree": "Glutenfrei",
+    "lactosefree": "Laktosefrei",
+    "bio": "100% Bio",
+    "organic": "100% natürlich",
+    "noaddedflavors": "ohne künstliche Aromen",
+    "noaddedsugar": "ohne Zuckerzusatz",
+    "noaddedcoloring": "ohne Farbstoffe",
+    "noaddedpreservatives": "ohne Konservierungsstoffe",
+    "highprotein": "Proteinreich",
+    "ketogenic": "Ketogen"
+  }
+]
