@@ -9,5 +9,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #eee;
 }
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  background: #232323;
+  background-position: right 20px bottom 10px;
+  display: inline-block;
+  padding: 7px 15px 7px 0;
+  margin: 0;
+}
+
+h2 {
+  color: #232323;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #232323;
+}
 `
+
 export default GlobalStyle

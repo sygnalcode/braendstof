@@ -1,0 +1,52 @@
+[
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Acai Berry & Superseed",
+    "tags": {
+      "Paleo": true,
+      "Raw": true,
+      "Vegan": false,
+      "lowsugar": false,
+      "lowcarb": false,
+      "soyfree": false,
+      "grainfree": false,
+      "lactosefree": false,
+      "bio": true,
+      "organic": true,
+      "noaddedflavors": true,
+      "noaddedsugar": true,
+      "noaddedcoloring": true,
+      "noaddedpreservatives": true,
+      "highprotein": false,
+      "ketogenic": false
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack012"
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Cashew",
+    "tags": {
+      "paleo": false,
+      "raw": true,
+      "vegan": true,
+      "lowsugar": false,
+      "lowcarb": false,
+      "soyfree": false,
+      "grainfree": false,
+      "lactosefree": false,
+      "bio": true,
+      "organic": true,
+      "noaddedflavors": true,
+      "noaddedsugar": true,
+      "noaddedcoloring": true,
+      "noaddedpreservatives": true,
+      "highprotein": false,
+      "ketogenic": false
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack019"
+  }
+]

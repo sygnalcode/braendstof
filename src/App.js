@@ -1,10 +1,17 @@
 import React from 'react'
-import SnackList from './SnackList'
+import styled from 'styled-components/macro'
+import SnackList from './snacks/SnackList'
+import SnackFooter from './snacks/SnackFooter'
 
 export default function App() {
   return (
-    <div>
+    <PageStyled>
       <SnackList />
-    </div>
+      <SnackFooter />
+    </PageStyled>
   )
 }
+
+const PageStyled = styled.main`
+  position: relative;
+`
