@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import snacks from './snacks.json'
+import tags from './tags.json'
 
 export default function SnackFooter() {
   const currentSnackImage = 'snack012'
@@ -11,14 +12,14 @@ export default function SnackFooter() {
   const showFlavor = currentSnack.flavor
   const showDescription = currentSnack.description
   const showPrice = currentSnack.price.toFixed(2)
+  // const activeTags = currentSnack.tags.map(tag => <li>{tag}</li>)
 
   function showTags() {
     let tagKeys = []
-    for (const [key, value] of Object.entries(currentSnack.tags)) {
-      value
-        ? (tagKeys = [...tagKeys, <li style={{ color: '#4D4600' }}>{key}</li>])
-        : (tagKeys = [...tagKeys, <li style={{ color: '#DDCF3C' }}>{key}</li>])
+    for (const [value] of Object.entries(tags)) {
+      tagKeys = [...tagKeys, <li>{value}</li>]
     }
+
     return tagKeys
   }
 
@@ -26,6 +27,7 @@ export default function SnackFooter() {
     <StyledFooter>
       <h1>{showBrand}</h1>
       <h2>{showFlavor}</h2>
+      {/* <p>{showTags()}</p> */}
       <StyledList>{showTags()}</StyledList>
       <p>{showDescription}</p>
       <StyledPrice>€ {showPrice}</StyledPrice>
@@ -68,6 +70,14 @@ const StyledList = styled.ul`
     font-weight: bold;
     color: #4d4600;
   }
+`
+
+const StyledActiveTag = styled.li`
+  color: #4d4600;
+`
+
+const StyledPassiveTag = styled.li`
+  color: #ddcf3c;
 `
 
 const StyledPrice = styled.div`
