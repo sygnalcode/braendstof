@@ -34,5 +34,24 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "snack019"
+  },
+  {
+    "brand": "Raw Energy",
+    "flavor": "Banana & Coconut",
+    "tags": [
+      "raw",
+      "lowsugar",
+      "soyfree",
+      "bio",
+      "organic",
+      "noaddedflavors",
+      "noaddedsugar",
+      "noaddedcoloring",
+      "noaddedpreservatives",
+      "ketogenic"
+    ],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 3.0,
+    "picture": "snack026"
   }
 ]

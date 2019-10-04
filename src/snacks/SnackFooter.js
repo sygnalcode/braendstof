@@ -16,10 +16,9 @@ export default function SnackFooter() {
   function showTags() {
     let tagKeys = []
     for (const [key, value] of Object.entries(tags)) {
-      tagKeys =
-        currentSnack.tags.includes(key)
-          ? [...tagKeys, <StyledActiveTag>{value}</StyledActiveTag>]
-          : [...tagKeys, <StyledPassiveTag>{value}</StyledPassiveTag>]
+      tagKeys = currentSnack.tags.includes(key)
+        ? [...tagKeys, <StyledActiveTag>{value}</StyledActiveTag>]
+        : [...tagKeys, <StyledPassiveTag>{value}</StyledPassiveTag>]
     }
 
     return tagKeys
@@ -69,7 +68,6 @@ const StyledList = styled.ul`
     text-transform: uppercase;
     margin-right: 24px;
     font-weight: bold;
-    
   }
 `
 
@@ -78,7 +76,7 @@ const StyledActiveTag = styled.li`
 `
 
 const StyledPassiveTag = styled.li`
-  color: #ddcf3c ;
+  color: #ddcf3c;
 `
 
 const StyledPrice = styled.div`
