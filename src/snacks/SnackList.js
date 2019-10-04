@@ -30,6 +30,34 @@ import snack026 from '../img/raw-energy-Banana-Coconut.png'
 // import snack028 from '../img/raw-energy-Peanuts-Dates.png'
 
 export default function SnackList() {
+  let scrollPosition = 0
+  let ticking = false
+
+  function showSnack(scrollPosition) {
+    // console.log(scrollPosition)
+    if (scrollPosition <= 200) {
+      console.log('Snack 1')
+    } else if (scrollPosition <= 500) {
+      console.log('Snack 2')
+    } else {
+      console.log('Snack 3')
+    }
+  }
+
+  window.addEventListener('scroll', e => {
+    scrollPosition = window.scrollY
+    // console.log(e)
+
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        showSnack(scrollPosition)
+        ticking = false
+      })
+
+      ticking = true
+    }
+  })
+
   return (
     <PicturesStyled>
       {/* <img src={snack001} alt="Eat Performance – Cashew Kirsche" />
@@ -43,26 +71,41 @@ export default function SnackList() {
       <img src={snack009} alt="nucao – Haselnuss" />
       <img src={snack010} alt="nucao – Macadamia Chai" />
       <img src={snack011} alt="nucao – Wilde Beere" /> */}
+      {/* <div className="content-container" onScroll={handleScroll}> */}
       <img src={snack012} alt="The Primal Pantry – Acai Berry Superseed" />
+      {/* </div> */}
       {/* <img src={snack013} alt="The Primal Pantry – Almond Cashew" />
       <img src={snack014} alt="The Primal Pantry – Apple Pecan" />
       <img src={snack015} alt="The Primal Pantry – Brazil Nut Cherry" />
       <img src={snack016} alt="The Primal Pantry – Coconut Macadamia" />
       <img src={snack017} alt="The Primal Pantry – Hazelnut Cocoa" />
       <img src={snack018} alt="The Primal Pantry – Lemon Poppy Seed" /> */}
+      {/* <div className="content-container" onScroll={handleScroll}> */}
       <img src={snack019} alt="Raw Bite – Cashew" />
+      {/* </div> */}
       {/* <img src={snack020} alt="Raw Bite – Coconut" />
       <img src={snack021} alt="Raw Bite – Peanut" />
       <img src={snack022} alt="Raw Bite – Protein" />
       <img src={snack023} alt="Raw Bite – Raw Cacao" />
       <img src={snack024} alt="Raw Bite – Vanilla Berries" />
       <img src={snack025} alt="Raw Energy – Apricot Cashew" /> */}
+      {/* <div className="content-container" onScroll={handleScroll}> */}
       <img src={snack026} alt="Raw Energy – Banana Coconut" />
+      {/* </div> */}
       {/* <img src={snack027} alt="Raw Energy – Maracuja Coconut" />
       <img src={snack028} alt="Raw Energy – Peanuts Dates" /> */}
     </PicturesStyled>
   )
 }
+
+// function handleScroll(e) {
+//   let element = e.target
+//   if (element.scrollHeight - element.scrollTop === element.clientHeight) {
+//     // do something at end of scroll
+//     console.log('ich wurde gescrollt')
+//     console.log(element)
+//   }
+// }
 
 const PicturesStyled = styled.div`
   display: grid;
