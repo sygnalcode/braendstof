@@ -4,7 +4,7 @@ import snacks from './snacks.json'
 import tags from './tags.json'
 
 export default function SnackFooter() {
-  const currentSnackImage = 'snack012'
+  const currentSnackImage = 'https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png'
   const currentSnack = snacks.filter(
     snack => snack.picture === currentSnackImage
   )[0]

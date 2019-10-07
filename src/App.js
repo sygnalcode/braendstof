@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import SnackList from './snacks/SnackList'
 import SnackFooter from './snacks/SnackFooter'
+import originalSnacksData from './snacks/snacks.json'
 
 export default function App() {
+  const [snacksData, setSnacksData] = useState(originalSnacksData)
+
   return (
     <PageStyled>
-      <SnackList />
+      <SnackList snacksData={snacksData}/>
       <SnackFooter />
     </PageStyled>
   )
@@ -14,4 +17,5 @@ export default function App() {
 
 const PageStyled = styled.main`
   position: relative;
+  overflow: hidden;
 `
