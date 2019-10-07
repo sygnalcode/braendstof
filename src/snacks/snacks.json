@@ -1,57 +1,254 @@
 [
   {
+    "brand": "eat performance",
+    "flavor": "Cashew & Kirsche",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack001",
+    "pictureheight": 213
+  },
+  {
+    "brand": "eat performance",
+    "flavor": "Coco Cranberry",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack002",
+    "pictureheight": 206
+  },
+  {
+    "brand": "eat performance",
+    "flavor": "Dattel Nuss",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack003",
+    "pictureheight": 223
+  },
+  {
+    "brand": "eat performance",
+    "flavor": "Feige Banane",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack004",
+    "pictureheight": 218
+  },
+  {
+    "brand": "eat performance",
+    "flavor": "Nussknacker",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack005",
+    "pictureheight": 217
+  },
+  {
+    "brand": "eat performance",
+    "flavor": "Sonnige Aprikose",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack006",
+    "pictureheight": 222
+  },
+  {
+    "brand": "nucao",
+    "flavor": "Cashew Vanille",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack007",
+    "pictureheight": 200
+  },
+  {
+    "brand": "nucao",
+    "flavor": "Kokos Zimt",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack008",
+    "pictureheight": 201
+  },
+  {
+    "brand": "nucao",
+    "flavor": "Haselnuss",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack009",
+    "pictureheight": 198
+  },
+  {
+    "brand": "nucao",
+    "flavor": "Macadamia Chai",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack010",
+    "pictureheight": 200
+  },
+  {
+    "brand": "nucao",
+    "flavor": "Wilde Beere",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack011",
+    "pictureheight": 199
+  },
+  {
     "brand": "The Primal Pantry",
     "flavor": "Acai Berry & Superseed",
-    "tags": [
-      "paleo",
-      "raw",
-      "vegan",
-      "glutenfree",
-      "bio",
-      "organic",
-      "noaddedflavors",
-      "noaddedsugar",
-      "noaddedcoloring",
-      "noaddedpreservatives"
-    ],
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
-    "picture": "snack012"
+    "picture": "snack012",
+    "pictureheight": 190
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Almond Cashew",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack013",
+    "pictureheight": 192
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Apple & Pecan",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack014",
+    "pictureheight": 203
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Brazil Nut & Cherry",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack015",
+    "pictureheight": 197
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Coconut & Macadamia",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack016",
+    "pictureheight": 195
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Hazelnut & Cocoa",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack017",
+    "pictureheight": 194
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Lemon & Poppy Seed",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "snack018",
+    "pictureheight": 204
   },
   {
     "brand": "Raw Bite",
     "flavor": "Cashew",
-    "tags": [
-      "raw",
-      "vegan",
-      "bio",
-      "organic",
-      "noaddedflavors",
-      "noaddedsugar",
-      "noaddedcoloring",
-      "noaddedpreservatives"
-    ],
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
-    "picture": "snack019"
+    "picture": "snack019",
+    "pictureheight": 260
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Coconut",
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack020",
+    "pictureheight": 258
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Peanut",
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack021",
+    "pictureheight": 267
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Protein",
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack022",
+    "pictureheight": 257
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Raw Cacao",
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack023",
+    "pictureheight": 268
+  },
+  {
+    "brand": "Raw Bite",
+    "flavor": "Vanilla Berries",
+    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack024",
+    "pictureheight": 265
+  },
+  {
+    "brand": "Raw Energy",
+    "flavor": "Apricot & Cashew",
+    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 2.5,
+    "picture": "snack025",
+    "pictureheight": 210
   },
   {
     "brand": "Raw Energy",
     "flavor": "Banana & Coconut",
-    "tags": [
-      "raw",
-      "lowsugar",
-      "soyfree",
-      "bio",
-      "organic",
-      "noaddedflavors",
-      "noaddedsugar",
-      "noaddedcoloring",
-      "noaddedpreservatives",
-      "ketogenic"
-    ],
-    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 3.0,
-    "picture": "snack026"
+    "picture": "snack026",
+    "pictureheight": 210
+  },
+  {
+    "brand": "Raw Energy",
+    "flavor": "Maracuja & Coconut",
+    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 3.0,
+    "picture": "snack027",
+    "pictureheight": 211
+  },
+  {
+    "brand": "Raw Energy",
+    "flavor": "Peanuts & Dates",
+    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
+    "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
+    "price": 3.0,
+    "picture": "snack028",
+    "pictureheight": 210
   }
 ]
