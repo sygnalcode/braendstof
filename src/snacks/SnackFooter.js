@@ -4,7 +4,8 @@ import snacks from './snacks.json'
 import tags from './tags.json'
 
 export default function SnackFooter() {
-  const currentSnackImage = 'https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png'
+  const currentSnackImage =
+    'https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png'
   const currentSnack = snacks.filter(
     snack => snack.picture === currentSnackImage
   )[0]
@@ -20,22 +21,21 @@ export default function SnackFooter() {
         ? [...tagKeys, <StyledActiveTag>{value}</StyledActiveTag>]
         : [...tagKeys, <StyledPassiveTag>{value}</StyledPassiveTag>]
     }
-
     return tagKeys
   }
 
   return (
-    <StyledFooter>
+    <StyledFooterBackground>
       <h1>{showBrand}</h1>
       <h2>{showFlavor}</h2>
-      <StyledList>{showTags()}</StyledList>
+      <StyledTagList>{showTags()}</StyledTagList>
       <p>{showDescription}</p>
       <StyledPrice>€ {showPrice}</StyledPrice>
-    </StyledFooter>
+    </StyledFooterBackground>
   )
 }
 
-const StyledFooter = styled.div`
+const StyledFooterBackground = styled.div`
   position: fixed;
   bottom: 0;
   height: 600px;
@@ -44,7 +44,7 @@ const StyledFooter = styled.div`
   /* padding-left: 80px;
   padding-right: 80px; */
   /* display: grid; */
-  padding: 20px 80px;
+  /* padding: 20px 80px; */
 `
 
 // const StyledHeadlineBackground = styled.div`
@@ -57,7 +57,7 @@ const StyledFooter = styled.div`
 //   top: 30px;
 // `
 
-const StyledList = styled.ul`
+const StyledTagList = styled.ul`
   list-style: none;
   margin-left: 0;
   padding-left: 0;
