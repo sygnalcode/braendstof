@@ -1,34 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import snacks from './snacks.json'
 import SnackTags from './SnackTags'
+// import snacks from './snacks.json'
 
 export default function SnackInfos({ snacksData }) {
-  const currentSnackImage =
-    'https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png'
-
-  const currentSnack = snacks.filter(
-    snack => snack.picture === currentSnackImage
-  )[0]
-
-  //   export default function SnackList({ snacksData }) {
-  //     return (
-  //       <section>
-  //         {snacksData.map((singleSnackData, index) => {
-  //           return <Snack data={singleSnackData} key={index} />
-  //         })}
-  //       </section>
-  //     )
-  //   }
-
-  //   return (
-  //     <section>
-  //       {snacksData.map((singleSnackData, index) => {
-  //         return <SnackInfos data={singleSnackData} key={index} />
-  //       })}
-  //     </section>
-  //   )
-  // }
+  let currentSnack = snacksData[0]
+  // console.log(currentSnack)
 
   return (
     <FooterBackgroundStyled>

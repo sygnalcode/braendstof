@@ -10,7 +10,7 @@ export default function App() {
   return (
     <PageStyled>
       <SnackPicturesList snacksData={snacksData} />
-      <SnackInfos />
+      <SnackInfos snacksData={snacksData} />
     </PageStyled>
   )
 }
