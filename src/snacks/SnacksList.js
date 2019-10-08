@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import Snack from './Snack'
+import SnackPicture from './SnackPicture'
 
 export default function SnackList({ snacksData }) {
   return (
     <PictureListStyled>
       {snacksData.map((singleSnackData, index) => {
-        return <Snack data={singleSnackData} key={index} />
+        return <SnackPicture data={singleSnackData} key={index} />
       })}
     </PictureListStyled>
   )
@@ -14,13 +14,11 @@ export default function SnackList({ snacksData }) {
 
 const PictureListStyled = styled.section`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
   justify-items: center;
-  align-items: center;
   gap: 80px;
   overflow: scroll;
   height: 100vh;
   padding-top: 600px;
+  /* todo: Padding bottom o.ä. */
   /* padding-bottom: 1150px; */
 `

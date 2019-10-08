@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
-import SnackList from './snacks/SnackList'
+import SnacksList from './snacks/SnacksList'
 import SnackFooter from './snacks/SnackFooter'
 import originalSnacksData from './snacks/snacks.json'
 
@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <PageStyled>
-      <SnackList snacksData={snacksData}/>
+      <SnacksList snacksData={snacksData} />
       <SnackFooter />
     </PageStyled>
   )
