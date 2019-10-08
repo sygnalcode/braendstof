@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import SnackPicture from './SnackPicture'
 
-export default function SnackList({ snacksData }) {
+export default function SnackPicturesList({ snacksData }) {
   return (
     <PictureListStyled>
       {snacksData.map((singleSnackData, index) => {
