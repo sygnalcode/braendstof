@@ -4,11 +4,10 @@ import snacks from './snacks.json'
 import tags from './tags.json'
 
 export default function SnackTags() {
-
   const currentSnackImage =
     'https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png'
-  
-    const currentSnack = snacks.filter(
+
+  const currentSnack = snacks.filter(
     snack => snack.picture === currentSnackImage
   )[0]
 
@@ -22,9 +21,7 @@ export default function SnackTags() {
     return tagKeys
   }
 
-  return (
-    <TagListStyled>{showTags()}</TagListStyled>
-  )
+  return <TagListStyled>{showTags()}</TagListStyled>
 }
 
 const TagListStyled = styled.ul`
