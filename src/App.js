@@ -5,12 +5,16 @@ import SnackInfos from './snacks/SnackInfos'
 import originalSnacksData from './snacks/snacks.json'
 
 export default function App() {
+  const [scrollYPosition, setScrollYPosition] = useState(0)
   const [snacksData, setSnacksData] = useState(originalSnacksData)
 
   return (
     <PageStyled>
-      <SnackPicturesList snacksData={snacksData} />
-      <SnackInfos snacksData={snacksData} />
+      <SnackPicturesList
+        snacksData={snacksData}
+        setScrollYPosition={setScrollYPosition}
+      />
+      <SnackInfos snacksData={snacksData} scrollYPosition={scrollYPosition} />
     </PageStyled>
   )
 }

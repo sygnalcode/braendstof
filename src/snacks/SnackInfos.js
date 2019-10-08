@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
-// import snacks from './snacks.json'
 
-export default function SnackInfos({ snacksData }) {
+export default function SnackInfos({ snacksData, scrollYPosition }) {
   let currentSnack = snacksData[0]
   // console.log(currentSnack)
+
+  console.log(scrollYPosition)
 
   return (
     <FooterBackgroundStyled>
