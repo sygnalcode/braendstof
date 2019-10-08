@@ -24,13 +24,17 @@ h2 {
   color: #232323;
   font-size: 3rem;
   padding: 0;
-  margin: 0;
+  margin: 15px 0 15px 0;
 }
 
 p {
   font-size: 2rem;
   font-weight: bold;
   color: #232323;
+  padding: 0;
+  margin: 0;
+  hyphens: auto;
+  text-align: justify;
 }
 `
 
