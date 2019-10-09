@@ -6,16 +6,18 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore magna a volco. Celitr sed diam nonumy eirmod.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png",
-    "pictureheight": 213
+    "pictureheight": 213,
+    "id": 1
   },
   {
     "brand": "eat performance",
     "flavor": "Coco Cranberry",
-    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469930/braendstof/eat-performance-Coco-Cranberry_g4wl1r.png",
-    "pictureheight": 206
+    "pictureheight": 206,
+    "id": 2
   },
   {
     "brand": "eat performance",
@@ -24,7 +26,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Dattelnuss_d5nbkx.png",
-    "pictureheight": 223
+    "pictureheight": 223,
+    "id": 3
   },
   {
     "brand": "eat performance",
@@ -33,7 +36,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Feige-Banane_mvi1qh.png",
-    "pictureheight": 218
+    "pictureheight": 218,
+    "id": 4
   },
   {
     "brand": "eat performance",
@@ -42,7 +46,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Nussknacker_dnupml.png",
-    "pictureheight": 217
+    "pictureheight": 217,
+    "id": 5
   },
   {
     "brand": "eat performance",
@@ -51,7 +56,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Sonnige-Aprikose_w4icgv.png",
-    "pictureheight": 222
+    "pictureheight": 222,
+    "id": 6
   },
   {
     "brand": "nucao",
@@ -60,7 +66,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Cashew-Vanille_c28hyh.png",
-    "pictureheight": 200
+    "pictureheight": 200,
+    "id": 7
   },
   {
     "brand": "nucao",
@@ -69,7 +76,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/nucao-Cocos-Zimt_lxbivb.png",
-    "pictureheight": 201
+    "pictureheight": 201,
+    "id": 8
   },
   {
     "brand": "nucao",
@@ -78,7 +86,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Haselnuss_pug7ra.png",
-    "pictureheight": 198
+    "pictureheight": 198,
+    "id": 9
   },
   {
     "brand": "nucao",
@@ -87,7 +96,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Macadamia-Chai_gizvym.png",
-    "pictureheight": 200
+    "pictureheight": 200,
+    "id": 10
   },
   {
     "brand": "nucao",
@@ -96,7 +106,8 @@
     "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Wilde-Beere_r2nnmq.png",
-    "pictureheight": 199
+    "pictureheight": 199,
+    "id": 11
   },
   {
     "brand": "The Primal Pantry",
@@ -105,7 +116,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Acai-Berry-Superseed_cnd2mg.png",
-    "pictureheight": 190
+    "pictureheight": 190,
+    "id": 12
   },
   {
     "brand": "The Primal Pantry",
@@ -114,7 +126,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Almond-Chashew_qrjkh0.png",
-    "pictureheight": 192
+    "pictureheight": 192,
+    "id": 13
   },
   {
     "brand": "The Primal Pantry",
@@ -123,7 +136,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Apple-Pecan_r9nn9v.png",
-    "pictureheight": 203
+    "pictureheight": 203,
+    "id": 14
   },
   {
     "brand": "The Primal Pantry",
@@ -132,7 +146,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Brazil-Nut-Cherry_epsfbq.png",
-    "pictureheight": 197
+    "pictureheight": 197,
+    "id": 15
   },
   {
     "brand": "The Primal Pantry",
@@ -141,7 +156,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Coconut-Macadamia_ouwbbx.png",
-    "pictureheight": 195
+    "pictureheight": 195,
+    "id": 16
   },
   {
     "brand": "The Primal Pantry",
@@ -150,7 +166,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Hazelnut-Cocoa_z6vesf.png",
-    "pictureheight": 194
+    "pictureheight": 194,
+    "id": 17
   },
   {
     "brand": "The Primal Pantry",
@@ -159,7 +176,8 @@
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Lemon-Poppy-Seed_ybkdhz.png",
-    "pictureheight": 204
+    "pictureheight": 204,
+    "id": 18
   },
   {
     "brand": "Raw Bite",
@@ -168,7 +186,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-bite-Cashew_nnfgvh.png",
-    "pictureheight": 260
+    "pictureheight": 260,
+    "id": 19
   },
   {
     "brand": "Raw Bite",
@@ -177,7 +196,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Coconut_nb7fou.png",
-    "pictureheight": 258
+    "pictureheight": 258,
+    "id": 20
   },
   {
     "brand": "Raw Bite",
@@ -186,7 +206,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Peanut_ttq0xu.png",
-    "pictureheight": 267
+    "pictureheight": 267,
+    "id": 21
   },
   {
     "brand": "Raw Bite",
@@ -195,7 +216,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/raw-bite-Protein_smxvpq.png",
-    "pictureheight": 257
+    "pictureheight": 257,
+    "id": 22
   },
   {
     "brand": "Raw Bite",
@@ -204,7 +226,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469936/braendstof/raw-bite-Raw-Cacao_zvtmsk.png",
-    "pictureheight": 268
+    "pictureheight": 268,
+    "id": 23
   },
   {
     "brand": "Raw Bite",
@@ -213,7 +236,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Vanilla-Berries_dmmmoc.png",
-    "pictureheight": 265
+    "pictureheight": 265,
+    "id": 24
   },
   {
     "brand": "Raw Energy",
@@ -222,7 +246,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 2.5,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Apricot-Cashew_evdtez.png",
-    "pictureheight": 210
+    "pictureheight": 210,
+    "id": 25
   },
   {
     "brand": "Raw Energy",
@@ -231,7 +256,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 3.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Banana-Coconut_c5zz1m.png",
-    "pictureheight": 210
+    "pictureheight": 210,
+    "id": 26
   },
   {
     "brand": "Raw Energy",
@@ -240,7 +266,8 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 3.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Maracuja-Coconut_vkz6jv.png",
-    "pictureheight": 211
+    "pictureheight": 211,
+    "id": 27
   },
   {
     "brand": "Raw Energy",
@@ -249,6 +276,7 @@
     "description": "Hosetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed.",
     "price": 3.0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Peanuts-Dates_hfjny9.png",
-    "pictureheight": 210
+    "pictureheight": 210,
+    "id": 28
   }
 ]
