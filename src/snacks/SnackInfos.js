@@ -1,12 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
-  let currentSnack = snacksData[0]
-  // console.log(currentSnack)
+  const [currentSnack, setCurrentSnack] = useState(snacksData[0])
+  let scrollPos = scrollYPosition
+  let ticking = false
+  
+  function doSomething(scrollPos) {
+    if (scrollPos < currentSnack.pictureheight) {
+      console.log('kleiner')
+    } else {
+      // scrollYPosition = 500
+      // console.log(scrollYPosition)
+      scrollPos += currentSnack.pictureheight
+      console.log(scrollPos)
+      setCurrentSnack(snacksData[1])
+    }
+  }
 
-  console.log(scrollYPosition)
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      doSomething(scrollPos)
+      ticking = false
+    })
+    ticking = true
+  }
+
+  // scrollYPosition < currentSnack.pictureheight
+  //   ? console.log('kleiner')
+  //   // : setCurrentSnack(() => currentSnack[5])
+  //   : setCurrentSnack(snacksData[1])
 
   return (
     <FooterBackgroundStyled>
@@ -28,7 +52,7 @@ const FooterContentStyled = styled.section`
   display: grid;
   margin: 0 auto;
   width: 1040px;
-  padding-top: 40px; /* todo: Finetuning wenn H1 BG separiert */
+  padding-top: 40px;
 `
 
 const FooterBackgroundStyled = styled.div`
@@ -39,7 +63,6 @@ const FooterBackgroundStyled = styled.div`
   background: #fff379;
 `
 
-// todo: Header BG bis an den linken Rand
 const HeadlineBackgroundStyled = styled.div`
   position: absolute;
   background: #232323;
