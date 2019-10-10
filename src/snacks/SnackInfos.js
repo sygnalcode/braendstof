@@ -1,36 +1,130 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
   const [currentSnack, setCurrentSnack] = useState(snacksData[0])
-  let scrollPos = scrollYPosition
-  let ticking = false
-  
-  function doSomething(scrollPos) {
-    if (scrollPos < currentSnack.pictureheight) {
-      console.log('kleiner')
-    } else {
-      // scrollYPosition = 500
-      // console.log(scrollYPosition)
+  //const [snackScrollPosition, setSnackScrollPosition] = useState(0)
+  // const [snackTopPosition, setSnackTopPosition] = useState(0)
+  // const [snackCounter, setSnackCounter] = useState(0)
+  // const [lastScrollPosition, setLastScrollPosition] = useState(0)
+  const [allSnackHeights, setAllSnackHeights] = useState(snacksData.map(snack => snack.pictureheight))
+
+  // useEffect(() => {
+  //   const newSnack = snacksData[snackCounter]
+  //   if (newSnack) {
+  //     setCurrentSnack(newSnack)
+  //   }
+  // }, [snackCounter])
+  // const [currentScrollPos, setCurrentScrollPos] = useState(scrollYPosition)
+
+  // 1. Idee – Höhen ausrechnen
+  // function setSrollStart() {
+  //   // magic
+  //   snacksData.map(snack => ({...snack + snack.pictureheight, }))
+  // }
+
+  // 2. Idee – Position aus dem DOM entnehmen
+  // useEffect(_ => {
+  //   snacksData.map( snack => ({...snack, position: "ausnHTML"}))
+  // }, [])
+
+  //
+  // todo: Snack beim Hochscrollen rückwärts zählen
+  //
+
+  console.log(scrollYPosition)
+
+  useEffect(() => {
+//    console.log('effected')
+//    handleScrollEvent(scrollYPosition)
+ //   setSnackScrollPosition(scrollYPosition - setSnackTopPosition)
+    handleScrollEvent(scrollYPosition)
+    // setLastScrollPosition(scrollYPosition)
+  }, [scrollYPosition])
+
+  function handleScrollEvent(scrollPosition) {
+    let snackCounter = 0
+    let position = 0
+    allSnackHeights.forEach(snackHeight => {
+      position += snackHeight
+      if (scrollPosition >= position && scrollPosition < (position + allSnackHeights[snackCounter + 1] + 90)) {
+        console.log('POSITION', position)
+        const newSnack = snacksData[snackCounter]
+        if (newSnack) {
+          setCurrentSnack(newSnack)
+        }
+      }
+      snackCounter++
+    })
+  }
+
+//   function handleScrollEvent(scrollPos) {
+//     console.log(scrollPos)
+//     console.log(snackTopPosition)
+//     const snackScrollPosition = (scrollPos - (scrollPos - lastScrollPosition)) - snackTopPosition
+//     console.log(snackTopPosition)
+// //    console.log(snackScrollPosition)
+//     if (snackScrollPosition > currentSnack.pictureheight + 20) {
+//       console.log('NEXT SNACK')
+// //      setSnackScrollPosition(0)
+//       setSnackTopPosition(scrollPos)
+//       setSnackCounter(snackCounter + 1)
+//     }
+// //     else if (snackScrollPosition < 0) {
+// //       setSnackTopPosition(scrollPos - currentSnack.pictureheight - 20)
+// // //      setSnackScrollPosition(currentSnack.pictureheight + 20)
+// //     }
+//   }
+
+  function setSnackByScroll(scrollPos) {
+    const currentIndex = snacksData.findIndex(
+      snack => snack.id === currentSnack.id
+      )
+      // console.log(scrollPos)
+      console.log(currentSnack)
+      if (scrollPos > currentSnack.pictureheight) {
       scrollPos += currentSnack.pictureheight
-      console.log(scrollPos)
-      setCurrentSnack(snacksData[1])
+      const newSnack = snacksData[currentIndex + 1]
+      if (newSnack) {
+        setCurrentSnack(newSnack)
+      }
     }
   }
 
-  if (!ticking) {
-    window.requestAnimationFrame(() => {
-      doSomething(scrollPos)
-      ticking = false
-    })
-    ticking = true
-  }
+  //
+  // letzter Stand
+  //
+  // useEffect(() => {
+  //   console.log('effected')
+  //   setSnackByScroll(scrollYPosition)
+  // }, [scrollYPosition])
 
-  // scrollYPosition < currentSnack.pictureheight
-  //   ? console.log('kleiner')
-  //   // : setCurrentSnack(() => currentSnack[5])
-  //   : setCurrentSnack(snacksData[1])
+  // function setSnackByScroll(scrollPos) {
+  //   const currentIndex = snacksData.findIndex(
+  //     snack => snack.id === currentSnack.id
+  //   )
+  //   if (scrollPos > currentSnack.pictureheight) {
+  //     // scrollPos += currentSnack.pictureheight
+  //     const newSnack = snacksData[currentIndex + 1]
+  //     if (newSnack) {
+  //       setCurrentSnack(newSnack)
+  //     }
+  //   }
+  // }
+
+  //Idee: Start- und Endwerte errechnen aus pictureheight
+
+  // function setSnackByScroll(scrollPos) {
+  //   const currentIndex = snacksData.findIndex(
+  //     snack => snack.id === currentSnack.id
+  //   )
+  //   if (currentScrollPos < currentSnack.pictureheight) {
+  //   } else if (currentScrollPos > currentSnack.pictureheight) {
+  //     currentScrollPos += currentSnack.pictureheight
+  //     setCurrentSnack(snacksData[currentIndex + 1])
+  //   }
+  // }
 
   return (
     <FooterBackgroundStyled>
