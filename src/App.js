@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <PageStyled>
-      <CheckLine />
+      {/* <CheckLine /> */}
       <SnackPicturesList
         snacksData={snacksData}
         setScrollYPosition={setScrollYPosition}
@@ -25,9 +25,9 @@ const PageStyled = styled.main`
   overflow: hidden;
 `
 
-const CheckLine = styled.hr`
-  position: fixed;
-  top: 654px;
-  border: 2px solid red;
-  width: 100%;
-`
+// const CheckLine = styled.hr`
+//   position: fixed;
+//   top: 654px;
+//   border: 2px solid red;
+//   width: 100%;
+// `

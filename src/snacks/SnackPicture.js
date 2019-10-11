@@ -11,7 +11,7 @@ export default function SnackPicture({ data }) {
 
 const StyledDiv = styled.div`
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
