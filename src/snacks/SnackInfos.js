@@ -1,52 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
-import SnackTags from './SnackTags'
+import tags from './tags.json'
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
   const [currentSnack, setCurrentSnack] = useState(snacksData[0])
 
-  const [allSnackHeights, setAllSnackHeights] = useState(
-    snacksData.map(snack => snack.pictureheight)
-  )
-
-  // console.log(scrollYPosition)
-
   useEffect(() => {
     handleScrollEvent(scrollYPosition)
-  }, [scrollYPosition])
+  })
 
   function handleScrollEvent(scrollPosition) {
-    let snackCounter = 0
-    let position = 0
-    allSnackHeights.forEach(snackHeight => {
-      position += snackHeight
-      if (
-        scrollPosition >= position &&
-        scrollPosition < position + allSnackHeights[snackCounter + 1] + 90
-      ) {
-        // console.log('POSITION', position)
-        const newSnack = snacksData[snackCounter]
-        if (newSnack) {
-          setCurrentSnack(newSnack)
-        }
-      }
-      snackCounter++
-    })
+    const index = Math.round(scrollPosition / 340)
+    setCurrentSnack(snacksData[index])
   }
 
-  function setSnackByScroll(scrollPos) {
-    const currentIndex = snacksData.findIndex(
-      snack => snack.id === currentSnack.id
-    )
-    // console.log(scrollPos)
-    // console.log(currentSnack)
-    if (scrollPos > currentSnack.pictureheight) {
-      scrollPos += currentSnack.pictureheight
-      const newSnack = snacksData[currentIndex + 1]
-      if (newSnack) {
-        setCurrentSnack(newSnack)
-      }
+  function showTags() {
+    let tagKeys = []
+    for (const [key, value] of Object.entries(tags)) {
+      tagKeys = currentSnack.tags.includes(key)
+        ? [...tagKeys, <ActiveTagStyled>{value}</ActiveTagStyled>]
+        : [...tagKeys, <PassiveTagStyled>{value}</PassiveTagStyled>]
     }
+    return tagKeys
   }
 
   return (
@@ -55,7 +30,7 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
         <HeadlineBackgroundStyled />
         <h1>{currentSnack.brand}</h1>
         <h2>{currentSnack.flavor}</h2>
-        <SnackTags />
+        <TagListStyled>{showTags()}</TagListStyled>
         <DescriptionAndPriceStyled>
           <p>{currentSnack.description}</p>
           <PriceStyled>€&nbsp;{currentSnack.price.toFixed(2)}</PriceStyled>
@@ -64,6 +39,28 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
     </FooterBackgroundStyled>
   )
 }
+
+const TagListStyled = styled.ul`
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  & li {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-right: 24px;
+    font-weight: bold;
+  }
+`
+
+const ActiveTagStyled = styled.li`
+  color: #4d4600;
+`
+
+const PassiveTagStyled = styled.li`
+  color: #ddcf3c;
+`
 
 const FooterContentStyled = styled.section`
   display: grid;

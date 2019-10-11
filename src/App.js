@@ -26,8 +26,8 @@ const PageStyled = styled.main`
 `
 
 const CheckLine = styled.hr`
-position: absolute;
-top: 654px;
-border: 2px solid red;
-width: 100%;
+  position: fixed;
+  top: 654px;
+  border: 2px solid red;
+  width: 100%;
 `
