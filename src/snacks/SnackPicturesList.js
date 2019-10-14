@@ -12,7 +12,7 @@ export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
   }, [])
 
   return (
-    <ScrollGridStyled>
+    <SpacerGridStyled>
       <div></div>
       <PictureListStyled>
         {snacksData.map((singleSnackData, index) => {
@@ -20,11 +20,11 @@ export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
         })}
       </PictureListStyled>
       <div></div>
-    </ScrollGridStyled>
+    </SpacerGridStyled>
   )
 }
 
-const ScrollGridStyled = styled.div`
+const SpacerGridStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 475px auto 1150px;
