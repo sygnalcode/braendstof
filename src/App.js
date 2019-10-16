@@ -27,7 +27,7 @@ const PageStyled = styled.main`
 
 // const CheckLine = styled.hr`
 //   position: fixed;
-//   top: 654px;
-//   border: 2px solid red;
+//   top: 362px;
+//   border: 1px solid red;
 //   width: 100%;
 // `
