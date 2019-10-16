@@ -43,8 +43,6 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
 const FooterContentStyled = styled.section`
   display: grid;
   margin: 1rem 2rem 0 2rem;
-  /* width: 1040px; */
-  /* padding-top: 40px; */
 `
 
 const FooterBackgroundStyled = styled.div`
@@ -68,7 +66,7 @@ const TagListStyled = styled.ul`
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  & li {
+  > li {
     float: left;
     font-size: 1rem;
     line-height: 1.8rem;
