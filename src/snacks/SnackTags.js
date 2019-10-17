@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import tags from './tags.json'
+import PropTypes from 'prop-types'
+
+SnackTags.propTypes = {
+  currentSnack: PropTypes.number.isRequired
+}
 
 export default function SnackTags({ currentSnack }) {
   function showTags() {

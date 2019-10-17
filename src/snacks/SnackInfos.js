@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
+import PropTypes from 'prop-types'
+
+SnackInfos.propTypes = {
+  scrollYPosition: PropTypes.number.isRequired,
+  snacksData: PropTypes.shape({
+    brand: PropTypes.string.isRequired,
+    flavor: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired
+  }).isRequired
+}
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
   const [currentSnack, setCurrentSnack] = useState(snacksData[0])
