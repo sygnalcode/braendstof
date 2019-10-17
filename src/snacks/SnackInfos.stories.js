@@ -1,8 +1,10 @@
 import React from 'react'
+import { withInfo } from '@storybook/addon-info'
 import SnackInfos from './SnackInfos'
 
 export default {
-  title: 'SnackInfos'
+  title: 'SnackInfos',
+  decorators: [withInfo]
 }
 
 export const small = () => (
@@ -11,7 +13,17 @@ export const small = () => (
       {
         brand: 'eat performance',
         flavor: 'Cashew & Kirsche',
-        tags: ['raw', 'lowsugar', 'soyfree', 'bio'],
+        tags: [
+          'raw',
+          'lowsugar',
+          'soyfree',
+          'bio',
+          'noaddedsugar',
+          'noaddedcoloring',
+          'bio',
+          'ketogenic',
+          'organic'
+        ],
         description:
           'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.',
         price: 2.0
