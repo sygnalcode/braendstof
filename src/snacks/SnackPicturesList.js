@@ -9,10 +9,10 @@ SnackPicturesList.propTypes = {
 }
 
 export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
-  function handleScroll() {
-    setScrollYPosition(window.pageYOffset)
-  }
   useEffect(() => {
+    function handleScroll() {
+      setScrollYPosition(window.pageYOffset)
+    }
     window.addEventListener('scroll', handleScroll) // todo: Listener auf main o.ä.
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
