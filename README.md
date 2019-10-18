@@ -2,9 +2,7 @@
 
 ## What is this?
 
-This app was developed as an exercise during the [Web Development Bootcamp](https://www.neuefische.de/weiterbildung/web-development) offered by [neue fische GmbH](https://www.neuefische.de) in fall 2019.
-
-Special thanks fly out to our Head Coach [Jerry](https://badabam.de/)!
+This app was developed as an exercise during the [Web Development Bootcamp](https://www.neuefische.de/weiterbildung/web-development) offered by [neue fische GmbH](https://www.neuefische.de) in fall 2019. Special thanks fly out to our Head Coach [Jerry](https://badabam.de/)!
 
 ## Purpose
 
