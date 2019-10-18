@@ -4,7 +4,7 @@ import tags from './tags.json'
 import PropTypes from 'prop-types'
 
 SnackTags.propTypes = {
-  currentSnack: PropTypes.number.isRequired
+  currentSnack: PropTypes.shape({ tags: PropTypes.array.isRequired }).isRequired
 }
 
 export default function SnackTags({ currentSnack }) {
