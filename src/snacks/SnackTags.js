@@ -8,16 +8,17 @@ SnackTags.propTypes = {
 }
 
 export default function SnackTags({ currentSnack }) {
-  function showTags() {
-    return Object.entries(tags).map(([key, value]) => {
-      return currentSnack.tags.includes(key) ? (
-        <ActiveTagStyled>{value}</ActiveTagStyled>
-      ) : (
-        <PassiveTagStyled>{value}</PassiveTagStyled>
-      )
-    })
-  }
-  return <TagListStyled>{showTags()}</TagListStyled>
+  return (
+    <TagListStyled>
+      {Object.entries(tags).map(([key, value]) => {
+        return currentSnack.tags.includes(key) ? (
+          <ActiveTagStyled>{value}</ActiveTagStyled>
+        ) : (
+          <PassiveTagStyled>{value}</PassiveTagStyled>
+        )
+      })}
+    </TagListStyled>
+  )
 }
 
 const TagListStyled = styled.ul`
