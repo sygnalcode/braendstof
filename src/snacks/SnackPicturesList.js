@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackPicture from './SnackPicture'
+import PropTypes from 'prop-types'
+
+SnackPicturesList.propTypes = {
+  setScrollYPosition: PropTypes.func.isRequired,
+  snacksData: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired
+}
 
 export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
   function handleScroll() {

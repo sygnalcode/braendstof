@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
-import tags from './tags.json'
+import SnackTags from './SnackTags'
+import PropTypes from 'prop-types'
+
+SnackInfos.propTypes = {
+  scrollYPosition: PropTypes.number.isRequired,
+  snacksData: PropTypes.shape({
+    brand: PropTypes.string.isRequired,
+    flavor: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired
+  }).isRequired
+}
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
   const [currentSnack, setCurrentSnack] = useState(snacksData[0])
@@ -14,23 +25,13 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
     setCurrentSnack(snacksData[index])
   }
 
-  function showTags() {
-    return Object.entries(tags).map(([key, value]) => {
-      return currentSnack.tags.includes(key) ? (
-        <ActiveTagStyled>{value}</ActiveTagStyled>
-      ) : (
-        <PassiveTagStyled>{value}</PassiveTagStyled>
-      )
-    })
-  }
-
   return (
     <FooterBackgroundStyled>
       <FooterContentStyled>
         <HeadlineBackgroundStyled />
         <h1>{currentSnack.brand}</h1>
         <h2>{currentSnack.flavor}</h2>
-        <TagListStyled>{showTags()}</TagListStyled>
+        <SnackTags currentSnack={currentSnack} />
         <DescriptionAndPriceStyled>
           <p>{currentSnack.description}</p>
           <PriceStyled>€&nbsp;{currentSnack.price.toFixed(2)}</PriceStyled>
@@ -61,27 +62,6 @@ const HeadlineBackgroundStyled = styled.div`
   z-index: -1;
   left: -80px;
   top: 1rem;
-`
-const TagListStyled = styled.ul`
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  > li {
-    float: left;
-    font-size: 1rem;
-    line-height: 1.8rem;
-    text-transform: uppercase;
-    margin-right: 20px;
-    font-weight: bold;
-  }
-`
-
-const ActiveTagStyled = styled.li`
-  color: #4d4600;
-`
-
-const PassiveTagStyled = styled.li`
-  color: #ddcf3c;
 `
 
 const DescriptionAndPriceStyled = styled.div`

@@ -1,7 +1,16 @@
-import { configure } from '@storybook/react'
-import { addDecorator } from '@storybook/react'
+import { addDecorator, configure } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-addDecorator(withInfo)
+import React from 'react'
+import GlobalStyles from '../src/common/GlobalStyles'
+
+const withGlobal = story => (
+  <>
+    <GlobalStyles />
+    {story()}
+  </>
+)
+
+addDecorator(withGlobal)
 
 configure(require.context('../src', true, /\.stories\.js$/), module)
