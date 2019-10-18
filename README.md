@@ -4,6 +4,10 @@
 
 This app was developed as an exercise during the [Web Development Bootcamp](https://www.neuefische.de/weiterbildung/web-development) offered by [neue fische GmbH](https://www.neuefische.de) in fall 2019.
 
+Special thanks fly out to our Head Coach [Jerry](https://badabam.de/)!
+
+## Purpose
+
 The app is designed to be used on a tablet next to the office snackbox [Brændstof](https://braendstof.de). The app enables employees to book their consumed snacks and provides additional information such as ingredients, nutritional value, price and more.
 
 ## Tech used
@@ -33,13 +37,13 @@ The app is designed to be used on a tablet next to the office snackbox [Brændst
    npm run storybook
    ```
 
-## Tested devices
+## Designated devices
 
-Tested on portrait view on a Samsung Galaxy Tab A 10,1“ (2019).
+Samsung Galaxy Tab A 10,1“ (2019) in portrait view.
 
 ## License
 
-Not licensed yet. Please contact the author before commercial use.
+Not licensed yet. Please contact the author for commercial use.
 
 ## Author contact
 
