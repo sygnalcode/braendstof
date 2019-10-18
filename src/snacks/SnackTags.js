@@ -12,9 +12,9 @@ export default function SnackTags({ currentSnack }) {
     <TagListStyled>
       {Object.entries(tags).map(([key, value]) => {
         return currentSnack.tags.includes(key) ? (
-          <ActiveTagStyled>{value}</ActiveTagStyled>
+          <ActiveTagStyled key={key}>{value}</ActiveTagStyled>
         ) : (
-          <PassiveTagStyled>{value}</PassiveTagStyled>
+          <PassiveTagStyled key={key}>{value}</PassiveTagStyled>
         )
       })}
     </TagListStyled>
