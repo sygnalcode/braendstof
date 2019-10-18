@@ -8,6 +8,9 @@ export default function App() {
   const [scrollYPosition, setScrollYPosition] = useState(0)
   const [snacksData, setSnacksData] = useState(originalSnacksData)
 
+  // prevent console warning
+  snacksData === null && setSnacksData(originalSnacksData)
+
   return (
     <PageStyled>
       <SnackPicturesList
