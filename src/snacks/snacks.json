@@ -56,16 +56,6 @@
   },
   {
     "brand": "eat performance",
-    "flavor": "Nussknacker",
-    "tags": ["raw", "lowsugar", "soyfree", "bio"],
-    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam et dolore magna aliquyam erat sed.",
-    "price": 2.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Nussknacker_dnupml.png",
-    "pictureheight": 217,
-    "id": 5
-  },
-  {
-    "brand": "eat performance",
     "flavor": "Sonnige Aprikose",
     "tags": [
       "paleo",
@@ -121,16 +111,6 @@
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/nucao-Cocos-Zimt_lxbivb.png",
     "pictureheight": 201,
     "id": 8
-  },
-  {
-    "brand": "nucao",
-    "flavor": "Haselnuss",
-    "tags": ["raw", "lowsugar", "soyfree", "bio"],
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.",
-    "price": 3.2,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Haselnuss_pug7ra.png",
-    "pictureheight": 198,
-    "id": 9
   },
   {
     "brand": "nucao",
@@ -214,16 +194,6 @@
   },
   {
     "brand": "The Primal Pantry",
-    "flavor": "Brazil Nut & Cherry",
-    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
-    "description": "Consetetur sadipscing elitr, Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore.",
-    "price": 2.1,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Brazil-Nut-Cherry_epsfbq.png",
-    "pictureheight": 197,
-    "id": 15
-  },
-  {
-    "brand": "The Primal Pantry",
     "flavor": "Coconut & Macadamia",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy magna aliquyam.",
@@ -231,16 +201,6 @@
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Coconut-Macadamia_ouwbbx.png",
     "pictureheight": 195,
     "id": 16
-  },
-  {
-    "brand": "The Primal Pantry",
-    "flavor": "Hazelnut & Cocoa",
-    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.",
-    "price": 2.4,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Hazelnut-Cocoa_z6vesf.png",
-    "pictureheight": 194,
-    "id": 17
   },
   {
     "brand": "The Primal Pantry",
@@ -253,79 +213,56 @@
     "id": 18
   },
   {
-    "brand": "Raw Bite",
-    "flavor": "Cashew",
-    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
-    "description": "Consetetur sadipscing elitr, Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-bite-Cashew_nnfgvh.png",
-    "pictureheight": 260,
-    "id": 19
+    "brand": "Raw Energy",
+    "flavor": "Banana & Coconut",
+    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed ut labore et dolore magna aliquyam erat sed.",
+    "price": 3.0,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Banana-Coconut_c5zz1m.png",
+    "pictureheight": 210,
+    "id": 26
   },
   {
-    "brand": "Raw Bite",
-    "flavor": "Coconut",
-    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
+    "brand": "nucao",
+    "flavor": "Haselnuss",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.",
-    "price": 1.4,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Coconut_nb7fou.png",
-    "pictureheight": 258,
-    "id": 20
+    "price": 3.2,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Haselnuss_pug7ra.png",
+    "pictureheight": 198,
+    "id": 9
   },
   {
-    "brand": "Raw Bite",
-    "flavor": "Peanut",
+    "brand": "The Primal Pantry",
+    "flavor": "Brazil Nut & Cherry",
     "tags": [
       "paleo",
       "raw",
-      "vegan",
-      "lowcarb",
-      "soyfree",
       "glutenfree",
-      "lactosefree",
       "bio",
       "organic",
+      "soyfree",
       "noaddedflavors",
       "highprotein",
       "noaddedsugar",
       "noaddedcoloring",
-      "ketogenic"
+      "noaddedpreservatives"
     ],
-    "description": "Consetetur sadipscing elitr, Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Peanut_ttq0xu.png",
-    "pictureheight": 267,
-    "id": 21
+    "description": "Fruchtiger Geschmack mit leichter Süße. Ehrliche Zutaten kalt gepresst in bester Rohkostqualität. Gut sättigend.",
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Brazil-Nut-Cherry_epsfbq.png",
+    "pictureheight": 197,
+    "id": 15
   },
   {
-    "brand": "Raw Bite",
-    "flavor": "Protein",
-    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
-    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam ot dolore magna aliquyam erat sed.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/raw-bite-Protein_smxvpq.png",
-    "pictureheight": 257,
-    "id": 22
-  },
-  {
-    "brand": "Raw Bite",
-    "flavor": "Raw Cacao",
-    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
-    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469936/braendstof/raw-bite-Raw-Cacao_zvtmsk.png",
-    "pictureheight": 268,
-    "id": 23
-  },
-  {
-    "brand": "Raw Bite",
-    "flavor": "Vanilla Berries",
-    "tags": ["raw", "vegan", "bio", "organic", "noaddedcoloring"],
-    "description": "Consetetur sadipscing elitr, Lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor invidunt ut labore.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-bite-Vanilla-Berries_dmmmoc.png",
-    "pictureheight": 265,
-    "id": 24
+    "brand": "eat performance",
+    "flavor": "Nussknacker",
+    "tags": ["raw", "lowsugar", "soyfree", "bio"],
+    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed diam et dolore magna aliquyam erat sed.",
+    "price": 2.0,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Nussknacker_dnupml.png",
+    "pictureheight": 217,
+    "id": 5
   },
   {
     "brand": "Raw Energy",
@@ -339,16 +276,6 @@
   },
   {
     "brand": "Raw Energy",
-    "flavor": "Banana & Coconut",
-    "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
-    "description": "Nonumy eirmod tempor invidunt ut labore sadipscing elitr, sed ut labore et dolore magna aliquyam erat sed.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Banana-Coconut_c5zz1m.png",
-    "pictureheight": 210,
-    "id": 26
-  },
-  {
-    "brand": "Raw Energy",
     "flavor": "Maracuja & Coconut",
     "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
     "description": "Consetetur sadipscing elitr, Lorem ipsum dolor sit amet, sed diam nonumy eirmod et dolore magna aliquyam.",
@@ -356,6 +283,16 @@
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Maracuja-Coconut_vkz6jv.png",
     "pictureheight": 211,
     "id": 27
+  },
+  {
+    "brand": "The Primal Pantry",
+    "flavor": "Hazelnut & Cocoa",
+    "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt et dolore.",
+    "price": 2.4,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Hazelnut-Cocoa_z6vesf.png",
+    "pictureheight": 194,
+    "id": 17
   },
   {
     "brand": "Raw Energy",
