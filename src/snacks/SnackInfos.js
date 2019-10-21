@@ -21,16 +21,17 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
     handleScrollEvent(scrollYPosition)
   })
 
-  function handleScrollEvent(scrollPosition) {
-    const index = Math.round(scrollPosition / 340)
+  function handleScrollEvent(scrollYPosition) {
+    const index = Math.round(scrollYPosition / 240)
     setCurrentSnack(snacksData[index])
   }
 
   return (
     <FooterBackgroundStyled>
+      <DotStyled>&and;</DotStyled>
+      <HeadlineBackgroundStyled />
+      <h1>{currentSnack.brand}</h1>
       <FooterContentStyled>
-        <HeadlineBackgroundStyled />
-        <h1>{currentSnack.brand}</h1>
         <h2>{currentSnack.flavor}</h2>
         <SnackTags currentSnack={currentSnack} />
         <DescriptionAndPriceStyled>
@@ -50,9 +51,26 @@ const FooterContentStyled = styled.section`
 const FooterBackgroundStyled = styled.div`
   position: fixed;
   bottom: 0;
-  height: 380px;
+  height: 340px;
   width: 100%;
   background: #fff379;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+`
+
+const DotStyled = styled.div`
+  height: 60px;
+  width: 60px;
+  background-color: #fff379;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  position: fixed;
+  bottom: 310px;
+  left: 50%;
+  margin-left: -30px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.5rem;
 `
 
 const HeadlineBackgroundStyled = styled.div`
