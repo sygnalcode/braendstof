@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
 import PropTypes, { arrayOf } from 'prop-types'
+import { ChevronUp } from 'styled-icons/boxicons-regular/ChevronUp'
 
 SnackInfos.propTypes = {
   scrollYPosition: PropTypes.number.isRequired,
@@ -28,7 +29,9 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
 
   return (
     <FooterBackgroundStyled>
-      <DotStyled>&and;</DotStyled>
+      <DotStyled>
+        <ChevronUp size="40" title="Unlock account" />
+      </DotStyled>
       <HeadlineBackgroundStyled />
       <h1>{currentSnack.brand}</h1>
       <FooterContentStyled>
@@ -69,7 +72,7 @@ const DotStyled = styled.div`
   left: 50%;
   margin-left: -30px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 11px;
   font-size: 1.5rem;
 `
 
