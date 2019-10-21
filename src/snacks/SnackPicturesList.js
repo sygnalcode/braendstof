@@ -40,7 +40,7 @@ const SpacerGridStyled = styled.div`
 
 const SunbeamsStyled = styled.img`
   position: fixed;
-  top: 260px;
+  top: 280px;
   width: 100%;
 `
 
