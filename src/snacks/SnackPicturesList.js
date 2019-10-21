@@ -21,7 +21,7 @@ export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
   return (
     <SpacerGridStyled>
       <div></div>
-      <SunbeamsStyled src={Sunbeams} alt="" />
+      <SunbeamsStyled src={Sunbeams} alt="Sonnenstrahlen" />
       <PictureListStyled>
         {snacksData.map((singleSnackData, index) => {
           return <SnackPicture data={singleSnackData} key={index} />
