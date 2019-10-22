@@ -28,7 +28,7 @@ const TagListStyled = styled.ul`
   > li {
     float: left;
     font-size: 1rem;
-    line-height: 1.7rem;
+    line-height: 1.6rem;
     text-transform: uppercase;
     margin-right: 1.25rem;
     font-weight: bold;

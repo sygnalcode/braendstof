@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
-  @import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap');
 }
 
 body {
@@ -28,23 +27,23 @@ h1 {
 }
 
 h2 {
-  font-family: 'Sedgwick Ave', cursive;
-  font-weight: 400;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
   color: #232323;
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: -5px;
+  margin-top: -8px;
+  margin-bottom: -10px;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  line-height: 1.6rem;
   color: #232323;
   padding: 0;
   margin: 0;
   hyphens: auto;
-  text-align: justify;
 }
 `
 
