@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
+import Navigation from './common/Navigation'
 import SnackPicturesList from './snacks/SnackPicturesList'
 import SnackInfos from './snacks/SnackInfos'
 import originalSnacksData from './snacks/snacks.json'
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <PageStyled>
+      <Navigation />
       <SnackPicturesList
         snacksData={snacksData}
         setScrollYPosition={setScrollYPosition}
