@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
 import PropTypes, { arrayOf } from 'prop-types'
-import { ChevronUp } from 'styled-icons/boxicons-regular/ChevronUp'
+// import { ChevronUp } from 'styled-icons/boxicons-regular/ChevronUp'
 
 SnackInfos.propTypes = {
   scrollYPosition: PropTypes.number.isRequired,
@@ -29,9 +29,9 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
 
   return (
     <FooterBackgroundStyled>
-      <DotStyled>
+      {/* <DotStyled>
         <ChevronUp size="40" title="Unlock account" />
-      </DotStyled>
+      </DotStyled> */}
       <HeadlineBackgroundStyled />
       <h1>{currentSnack.brand}</h1>
       <FooterContentStyled>
@@ -60,28 +60,28 @@ const FooterBackgroundStyled = styled.div`
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 `
 
-const DotStyled = styled.div`
-  height: 60px;
-  width: 60px;
-  background-color: #fff379;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  display: inline-block;
-  position: fixed;
-  bottom: 310px;
-  left: 50%;
-  margin-left: -30px;
-  text-align: center;
-  padding-top: 11px;
-  font-size: 1.5rem;
-`
+// const DotStyled = styled.div`
+//   height: 60px;
+//   width: 60px;
+//   background-color: #fff379;
+//   box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
+//   border-radius: 50%;
+//   display: inline-block;
+//   position: fixed;
+//   bottom: 310px;
+//   left: 50%;
+//   margin-left: -30px;
+//   text-align: center;
+//   padding-top: 11px;
+//   font-size: 1.5rem;
+// `
 
 const HeadlineBackgroundStyled = styled.div`
   position: absolute;
   background: #232323;
   width: 200px;
   height: 33px;
-  z-index: -1;
+  z-index: -10;
   left: -80px;
   top: 1rem;
 `
