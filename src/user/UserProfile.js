@@ -1,17 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components/macro'
 
-export default function UserProfile({ userData }) {
-  const [currentUser, setCurrentUser] = useState(userData[0])
-
-  // prevent console warning
-  currentUser === null && setCurrentUser(userData[0])
-
+export default function UserProfile({ data }) {
   return (
     <BackgroundStyled>
-      <PictureStyled currentUser={currentUser}>&nbsp;</PictureStyled>
-      <FirstNameStyled>{currentUser.firstname}</FirstNameStyled>
-      <LastNameStyled>{currentUser.lastname}</LastNameStyled>
+      <PictureStyled data={data}>&nbsp;</PictureStyled>
+      <FirstNameStyled>{data.firstname}</FirstNameStyled>
+      <LastNameStyled>{data.lastname}</LastNameStyled>
     </BackgroundStyled>
   )
 }
@@ -23,7 +18,6 @@ const BackgroundStyled = styled.div`
   margin-top: 7px;
   border-radius: 40px;
   & :active {
-    /* border: 2px solid #fff379; */
     background: rgba(255, 243, 121, 0.3);
   }
 `
@@ -37,7 +31,7 @@ const PictureStyled = styled.div`
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(${props => props.currentUser.picture});
+  background-image: url(${props => props.data.picture});
 `
 const FirstNameStyled = styled.p`
   color: yellow;

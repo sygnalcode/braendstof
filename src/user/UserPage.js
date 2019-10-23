@@ -5,28 +5,9 @@ import UserProfile from './UserProfile'
 export default function UserPage({ userData }) {
   return (
     <GridStyled>
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      {/* 10 */}
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      {/* <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} /> */}
-      {/* 10 */}
+      {userData.map((singleUserData, index) => {
+        return <UserProfile data={singleUserData} key={index} />
+      })}
     </GridStyled>
   )
 }
