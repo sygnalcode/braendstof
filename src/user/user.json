@@ -3,112 +3,133 @@
     "firstname": "David Alexander",
     "lastname": "Aigner",
     "balance": 0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571823588/braendstof/aigner_yhuxfm.png",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/aigner_zr2kea.jpg",
     "id": 1
+  },
+  {
+    "firstname": "Samesh",
+    "lastname": "Bhatia",
+    "balance": 0,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/bhatia_ao68gc.jpg",
+    "id": 17
   },
   {
     "firstname": "Christian",
     "lastname": "Egger",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/egger_spl7t1.jpg",
     "id": 2
+  },
+  {
+    "firstname": "David",
+    "lastname": "Hallmann",
+    "balance": 0,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/hallmann_q2kghy.jpg",
+    "id": 18
+  },
+  {
+    "firstname": "Albrecht",
+    "lastname": "Jordan",
+    "balance": 0,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/jordan_vjvkiu.jpg",
+    "id": 19
   },
   {
     "firstname": "Anna",
     "lastname": "Leitner-Becker",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/leitner-becker_aip0dg.jpg",
     "id": 3
   },
   {
     "firstname": "Sabine",
     "lastname": "Löschmann",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/loeschmann_is54cd.jpg",
     "id": 4
   },
   {
     "firstname": "Stefan",
     "lastname": "Maier",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/maier_lbwcre.jpg",
     "id": 5
   },
   {
     "firstname": "Daniela",
     "lastname": "Moser",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/moser_k7vlro.jpg",
     "id": 6
   },
   {
     "firstname": "Sabine",
     "lastname": "Müller",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/mueller_uaseyw.jpg",
     "id": 7
   },
   {
     "firstname": "Helmut",
     "lastname": "Neubauer",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/neubauer_dsb7c6.jpg ",
     "id": 8
   },
   {
     "firstname": "Christian",
     "lastname": "Ortner",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/ortner_mlgu0v.jpg",
     "id": 9
   },
   {
     "firstname": "Mario",
     "lastname": "Reiter",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/reiter_uuzgpx.jpg",
     "id": 10
   },
   {
-    "firstname": "Gerhard",
+    "firstname": "Volker",
     "lastname": "Schneider",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/schneider_wgflhp.jpg",
     "id": 11
   },
   {
     "firstname": "Martin",
     "lastname": "Schwartz",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/schwartz_twvkq5.jpg",
     "id": 12
   },
   {
     "firstname": "Marie-Estelle",
     "lastname": "Stadlbauer",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/stadlbauer_nnr6do.jpg",
     "id": 13
   },
   {
     "firstname": "Verena",
     "lastname": "Wieser",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826138/braendstof/wieser_ksj0r5.jpg",
     "id": 14
   },
   {
     "firstname": "Andrea",
     "lastname": "Winkler",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826139/braendstof/winkler_anykfd.jpg",
     "id": 15
   },
   {
     "firstname": "Oliver",
     "lastname": "Zauner",
     "balance": 0,
-    "picture": "",
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1571826139/braendstof/zauner_hc10xh.jpg",
     "id": 16
   }
 ]

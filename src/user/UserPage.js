@@ -23,9 +23,9 @@ export default function UserPage({ userData }) {
       <UserProfile userData={userData} />
       <UserProfile userData={userData} />
       <UserProfile userData={userData} />
+      {/* <UserProfile userData={userData} />
       <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
-      <UserProfile userData={userData} />
+      <UserProfile userData={userData} /> */}
       {/* 10 */}
     </GridStyled>
   )
