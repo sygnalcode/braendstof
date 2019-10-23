@@ -34,7 +34,7 @@ const PictureStyled = styled.div`
   background-image: url(${props => props.data.picture});
 `
 const FirstNameStyled = styled.p`
-  color: yellow;
+  color: rgb(255, 243, 121);
   text-align: center;
 `
 const LastNameStyled = styled.p`
