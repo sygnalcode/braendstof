@@ -1,13 +1,13 @@
 [
   {
-    "firstname": "Christian",
+    "firstname": "David Alexander",
     "lastname": "Aigner",
     "balance": 0,
     "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png",
     "id": 1
   },
   {
-    "firstname": "Daniel",
+    "firstname": "Christian",
     "lastname": "Egger",
     "balance": 0,
     "picture": "",
@@ -22,13 +22,13 @@
   },
   {
     "firstname": "Sabine",
-    "lastname": "Leutheusser-Schnarrenberger",
+    "lastname": "Löschmann",
     "balance": 0,
     "picture": "",
     "id": 4
   },
   {
-    "firstname": "Christian",
+    "firstname": "Stefan",
     "lastname": "Maier",
     "balance": 0,
     "picture": "",
@@ -91,7 +91,7 @@
     "id": 13
   },
   {
-    "firstname": "Doris",
+    "firstname": "Verena",
     "lastname": "Wieser",
     "balance": 0,
     "picture": "",
@@ -105,7 +105,7 @@
     "id": 15
   },
   {
-    "firstname": "David Alexander",
+    "firstname": "Oliver",
     "lastname": "Zauner",
     "balance": 0,
     "picture": "",
