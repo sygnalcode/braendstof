@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 
 export default function UserProfile({ data }) {
+  const [activeUser, setActiveUser] = useState(null)
+
   return (
-    <BackgroundStyled>
+    <BackgroundStyled active>
       <PictureStyled data={data}>&nbsp;</PictureStyled>
-      <FirstNameStyled>{data.firstname}</FirstNameStyled>
-      <LastNameStyled>{data.lastname}</LastNameStyled>
+      <FirstNameStyled active>{data.firstname}</FirstNameStyled>
+      <LastNameStyled active>{data.lastname}</LastNameStyled>
     </BackgroundStyled>
   )
 }
@@ -17,9 +19,8 @@ const BackgroundStyled = styled.div`
   padding: 10px;
   margin-top: 7px;
   border-radius: 40px;
-  & :active {
-    background: rgba(255, 243, 121, 0.3);
-  }
+  background: ${props =>
+    props.active ? 'rgba(255, 243, 121, 1)' : 'transparent'};
 `
 
 const PictureStyled = styled.div`
@@ -34,11 +35,12 @@ const PictureStyled = styled.div`
   background-image: url(${props => props.data.picture});
 `
 const FirstNameStyled = styled.p`
-  color: rgb(255, 243, 121);
+  color: ${props =>
+    props.active ? 'rgba(35, 35, 35, 1)' : 'rgba(255, 243, 121, 1)'};
   text-align: center;
 `
 const LastNameStyled = styled.p`
-  color: white;
+  color: ${props => (props.active ? 'rgba(35, 35, 35, 1)' : 'white')};
   text-align: center;
   font-weight: 400;
   font-size: 1rem;

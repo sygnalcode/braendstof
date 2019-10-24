@@ -96,4 +96,5 @@ const PriceStyled = styled.div`
   font-weight: bold;
   font-size: 3.3rem;
   margin-left: 100px;
+  color: rgba(35, 35, 35, 1);
 `
