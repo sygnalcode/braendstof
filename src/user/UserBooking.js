@@ -2,7 +2,16 @@ import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 
 export default function UserBooking() {
-  const [bookedSnacks, setBookedSnacks] = useState(0)
+  const [snackSum, setSnackSum] = useState(1.5)
+  const [activeBtn, setActiveBtn] = useState(1)
+
+  const price = 1.5
+
+  function handleNumberClick(number) {
+    setActiveBtn(number)
+    setSnackSum(number * price)
+  }
+
   return (
     <BackgroundStyled>
       <ContentGridStyled>
@@ -13,21 +22,71 @@ export default function UserBooking() {
           <ToplineStyled>Betrag</ToplineStyled>
         </Item>
         <Item>
-          <NumberStyled>1</NumberStyled>
-          <NumberStyled>2</NumberStyled>
-          <NumberStyled>3</NumberStyled>
-          <NumberStyled>4</NumberStyled>
-          <NumberStyled>5</NumberStyled>
+          <NumberStyled
+            active={activeBtn === 1}
+            onClick={() => handleNumberClick(1)}
+          >
+            1
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 2}
+            onClick={() => handleNumberClick(2)}
+          >
+            2
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 3}
+            onClick={() => handleNumberClick(3)}
+          >
+            3
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 4}
+            onClick={() => handleNumberClick(4)}
+          >
+            4
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 5}
+            onClick={() => handleNumberClick(5)}
+          >
+            5
+          </NumberStyled>
         </Item>
         <Item>
-          <PriceStyled>€&nbsp;{bookedSnacks.toFixed(2)}</PriceStyled>
+          <PriceStyled>€&nbsp;{snackSum.toFixed(2)}</PriceStyled>
         </Item>
         <Item>
-          <NumberStyled>6</NumberStyled>
-          <NumberStyled>7</NumberStyled>
-          <NumberStyled>8</NumberStyled>
-          <NumberStyled>9</NumberStyled>
-          <NumberStyled>10</NumberStyled>
+          <NumberStyled
+            active={activeBtn === 6}
+            onClick={() => handleNumberClick(6)}
+          >
+            6
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 7}
+            onClick={() => handleNumberClick(7)}
+          >
+            7
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 8}
+            onClick={() => handleNumberClick(8)}
+          >
+            8
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 9}
+            onClick={() => handleNumberClick(9)}
+          >
+            9
+          </NumberStyled>
+          <NumberStyled
+            active={activeBtn === 10}
+            onClick={() => handleNumberClick(10)}
+          >
+            10
+          </NumberStyled>
         </Item>
         <Item>
           <BuyBtn>Kaufen</BuyBtn>
@@ -48,8 +107,8 @@ const BackgroundStyled = styled.div`
 
 const ContentGridStyled = styled.section`
   display: grid;
-  grid-template-columns: auto 200px;
-  grid-template-rows: 30px 75px 85px;
+  grid-template-columns: auto 170px;
+  grid-template-rows: 40px 75px 85px;
   position: relative;
   margin: 16px 32px 0 32px;
 `
@@ -57,7 +116,6 @@ const Item = styled.div`
   display: flex;
   justify-content: flex-start;
   padding: 5px;
-  /* border: 1px solid red; */
 `
 
 const ToplineStyled = styled.div`
@@ -75,12 +133,9 @@ const NumberStyled = styled.div`
   margin-right: 20px;
   font-size: 1.8rem;
   font-weight: bold;
-  color: rgb(35, 35, 35);
+  color: ${props => (props.active ? 'white' : 'rgb(35, 35, 35)')};
   border: 2px solid rgb(35, 35, 35);
-  & :active {
-    background-color: black;
-    color: white;
-  }
+  background: ${props => (props.active ? 'rgb(35, 35, 35)' : 'transparent')};
 `
 
 const PriceStyled = styled.div`
@@ -88,14 +143,16 @@ const PriceStyled = styled.div`
   right: 0px;
   font-weight: bold;
   font-size: 3.3rem;
+  color: rgba(35, 35, 35, 1);
 `
 const BuyBtn = styled.button`
   position: absolute;
   right: 0px;
-  width: 150px;
+  width: 160px;
   height: 60px;
-  background-color: black;
+  background-color: rgba(35, 35, 35, 1);
   color: white;
+  letter-spacing: 0.05rem;
   border-radius: 30px;
   border: 0;
   font-size: 1.5rem;
