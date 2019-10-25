@@ -154,6 +154,14 @@ const BuyBtn = styled.button`
   color: white;
   letter-spacing: 0.05rem;
   border-radius: 30px;
-  border: 0;
+  border: 2px solid rgba(35, 35, 35, 1);
   font-size: 1.5rem;
+  & :focus {
+    outline: none;
+    box-shadow: 0 0 0 2pt white;
+  }
+  & :active {
+    color: rgba(35, 35, 35, 1);
+    background-color: rgb(255, 243, 121);
+  }
 `
