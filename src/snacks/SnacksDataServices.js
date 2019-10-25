@@ -10,6 +10,10 @@ export function patchSnack(id, data) {
   return fetchSnacks({ method: 'PATCH', id, data })
 }
 
+export function getSnackTags() {
+  return fetchSnackTags()
+}
+
 function fetchSnacks({ method = 'GET', id = '', data } = {}) {
   return fetch('/snacks/' + id, {
     method,
@@ -20,12 +24,8 @@ function fetchSnacks({ method = 'GET', id = '', data } = {}) {
   }).then(res => res.json())
 }
 
-export function getSnackTags() {
-  return fetchSnackTags()
-}
-
 function fetchSnackTags({ method = 'GET', id = '', data } = {}) {
-  return fetch('/snackTags/' + id, {
+  return fetch('/snacktags/' + id, {
     method,
     body: JSON.stringify(data),
     headers: {
