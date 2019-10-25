@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackTags from './SnackTags'
 import PropTypes, { arrayOf } from 'prop-types'
@@ -17,17 +17,22 @@ SnackInfos.propTypes = {
 }
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
-  const [currentSnack, setCurrentSnack] = useState(snacksData[0])
-  useEffect(() => {
+  const [currentSnack, setCurrentSnack] = useState(null)
+  console.log('snacksData', snacksData)
+  useLayoutEffect(() => {
     handleScrollEvent(scrollYPosition)
   })
+
+  useEffect(() => {
+    snacksData.length && setCurrentSnack(snacksData[0])
+  }, [snacksData])
 
   function handleScrollEvent(scrollYPosition) {
     const index = Math.round(scrollYPosition / 240)
     setCurrentSnack(snacksData[index])
   }
 
-  return (
+  return currentSnack ? (
     <FooterBackgroundStyled>
       {/* <DotStyled>
         <ChevronUp size="40" title="Unlock account" />
@@ -43,6 +48,8 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
         </DescriptionAndPriceStyled>
       </FooterContentStyled>
     </FooterBackgroundStyled>
+  ) : (
+    <></>
   )
 }
 

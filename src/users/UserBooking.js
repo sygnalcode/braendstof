@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
+import { patchUser, getSingleUser } from './UsersDataServices'
 
-export default function UserBooking() {
-  const [snackSum, setSnackSum] = useState(1.5)
+const price = 1.5
+
+export default function UserBooking({ activeUser }) {
+  const [snackSum, setSnackSum] = useState(price)
   const [activeBtn, setActiveBtn] = useState(1)
-
-  const price = 1.5
 
   return (
     <BackgroundStyled>
@@ -84,7 +85,9 @@ export default function UserBooking() {
           </NumberStyled>
         </Item>
         <Item>
-          <BuyBtn onClick={handleBuyClick()}>Kaufen</BuyBtn>
+          <BuyBtn onClick={handleBuyClick} disabled={!activeUser}>
+            Kaufen
+          </BuyBtn>
         </Item>
       </ContentGridStyled>
     </BackgroundStyled>
@@ -95,8 +98,9 @@ export default function UserBooking() {
     setSnackSum(number * price)
   }
 
-  function handleBuyClick() {
-    // magic
+  async function handleBuyClick() {
+    const { balance } = await getSingleUser(activeUser)
+    patchUser(activeUser, { balance: balance + snackSum })
   }
 }
 
@@ -155,16 +159,21 @@ const BuyBtn = styled.button`
   width: 160px;
   height: 60px;
   background-color: rgba(35, 35, 35, 1);
+  /* ${({ activeUser }) => (activeUser ? '0' : '-100%')} */
   color: white;
   letter-spacing: 0.05rem;
   border-radius: 30px;
   border: 2px solid rgba(35, 35, 35, 1);
   font-size: 1.5rem;
-  & :focus {
+  :disabled {
+    background-color: #999;
+    display: none;
+  }
+  :focus {
     outline: none;
     box-shadow: 0 0 0 2pt white;
   }
-  & :active {
+  :active {
     color: rgba(35, 35, 35, 1);
     background-color: rgb(255, 243, 121);
   }

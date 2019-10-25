@@ -4,8 +4,7 @@ const User = mongoose.model('User', {
   firstname: String,
   lastname: String,
   balance: Number,
-  picture: String,
-  isActive: Boolean
+  picture: String
 })
 
 module.exports = User

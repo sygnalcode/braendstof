@@ -3,25 +3,21 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import Navigation from './common/Navigation'
 import SnackPage from './snacks/SnackPage'
-import UserPage from './user/UserPage'
-import { getUser } from './user/UserDataServices'
+import UserPage from './users/UserPage'
+import { getUsers } from './users/UsersDataServices'
 import { getSnacks } from './snacks/SnacksDataServices'
-// import originalSnacksData from './snacks/snacks.json'
-// import originalUserData from './user/user.json'
 
 export default function App() {
   const [scrollYPosition, setScrollYPosition] = useState(0)
-  // const [snacksData, setSnacksData] = useState(originalSnacksData)
-  // const [userData, setUserData] = useState(originalUserData)
   const [userData, setUserData] = useState([])
   const [snacksData, setSnacksData] = useState([])
-
-  // prevent console warning
-  // snacksData === null && setSnacksData(originalSnacksData)
-  // userData === null && setUserData(originalSnacksData)
+  const [currentPage, setCurrentPage] = useState(0)
 
   useEffect(() => {
-    getUser().then(setUserData)
+    getUsers().then(userData => {
+      userData.sort((a, b) => a.lastname.localeCompare(b.lastname))
+      setUserData(userData)
+    })
   }, [])
 
   useEffect(() => {
@@ -35,20 +31,26 @@ export default function App() {
           <Route
             exact
             path="/"
-            render={() => <UserPage userData={userData} />}
+            render={() => {
+              setCurrentPage(0)
+              return <UserPage userData={userData}/>
+            }}
           />
           <Route
             path="/snacks"
-            render={() => (
-              <SnackPage
-                snacksData={snacksData}
-                setScrollYPosition={setScrollYPosition}
-                scrollYPosition={scrollYPosition}
-              />
-            )}
+            render={() => {
+              setCurrentPage(1)
+              return (
+                <SnackPage
+                  snacksData={snacksData}
+                  setScrollYPosition={setScrollYPosition}
+                  scrollYPosition={scrollYPosition}
+                />
+              )
+            }}
           />
         </Switch>
-        <Navigation />
+        <Navigation currentPageState={[currentPage, setCurrentPage]} />
       </PageStyled>
     </Router>
   )

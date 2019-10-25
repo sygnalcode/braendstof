@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  User.find({ id: req.params.id })
+  User.findById(req.params.id)
     .then(users => res.json(users))
     .catch(err => res.json(err))
 })

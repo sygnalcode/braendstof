@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components/macro'
 import { NavLink } from 'react-router-dom'
 import { ChevronLeft } from 'styled-icons/boxicons-regular/ChevronLeft'
 import { ChevronRight } from 'styled-icons/boxicons-regular/ChevronRight'
 
-export default function Navigation() {
-  const [currentPage, setCurrentPage] = useState(0)
+export default function Navigation({ currentPageState }) {
+  const [currentPage, setCurrentPage] = currentPageState
 
   return (
     <>
