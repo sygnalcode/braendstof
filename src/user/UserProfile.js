@@ -2,13 +2,36 @@ import React, { useState } from 'react'
 import styled from 'styled-components/macro'
 
 export default function UserProfile({ data }) {
-  const [activeUser, setActiveUser] = useState(null)
+  const [activeUser, setActiveUser] = useState(undefined)
+
+  function handleUserClick(id) {
+    setActiveUser(id)
+  }
 
   return (
-    <BackgroundStyled active>
-      <PictureStyled data={data}>&nbsp;</PictureStyled>
-      <FirstNameStyled active>{data.firstname}</FirstNameStyled>
-      <LastNameStyled active>{data.lastname}</LastNameStyled>
+    <BackgroundStyled
+      active={data.id === activeUser}
+      onClick={() => handleUserClick(data.id)}
+    >
+      <PictureStyled
+        active={data.id === activeUser}
+        data={data}
+        onClick={() => handleUserClick(data.id)}
+      >
+        &nbsp;
+      </PictureStyled>
+      <FirstNameStyled
+        active={data.id === activeUser}
+        onClick={() => handleUserClick(data.id)}
+      >
+        {data.firstname}
+      </FirstNameStyled>
+      <LastNameStyled
+        active={data.id === activeUser}
+        onClick={() => handleUserClick(data.id)}
+      >
+        {data.lastname}
+      </LastNameStyled>
     </BackgroundStyled>
   )
 }
