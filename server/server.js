@@ -15,3 +15,4 @@ server.set('json spaces', 2)
 
 server.use('/snacks', require('./routes/snacks'))
 server.use('/users', require('./routes/users'))
+server.use('/snacktags', require('./routes/snacktags'))
