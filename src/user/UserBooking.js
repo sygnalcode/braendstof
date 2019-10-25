@@ -7,11 +7,6 @@ export default function UserBooking() {
 
   const price = 1.5
 
-  function handleNumberClick(number) {
-    setActiveBtn(number)
-    setSnackSum(number * price)
-  }
-
   return (
     <BackgroundStyled>
       <ContentGridStyled>
@@ -89,11 +84,20 @@ export default function UserBooking() {
           </NumberStyled>
         </Item>
         <Item>
-          <BuyBtn>Kaufen</BuyBtn>
+          <BuyBtn onClick={handleBuyClick()}>Kaufen</BuyBtn>
         </Item>
       </ContentGridStyled>
     </BackgroundStyled>
   )
+
+  function handleNumberClick(number) {
+    setActiveBtn(number)
+    setSnackSum(number * price)
+  }
+
+  function handleBuyClick() {
+    // magic
+  }
 }
 
 const BackgroundStyled = styled.div`
