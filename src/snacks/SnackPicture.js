@@ -23,4 +23,5 @@ const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  scroll-snap-align: start;
 `

@@ -4,30 +4,24 @@
     "flavor": "Cashew & Kirsche",
     "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png",
-    "pictureheight": 106,
-    "id": 1
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Cashew-Kirsce_f5337a.png"
   },
   {
     "brand": "eat performance",
     "flavor": "Coco Cranberry",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469930/braendstof/eat-performance-Coco-Cranberry_g4wl1r.png",
-    "pictureheight": 206,
-    "id": 2
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469930/braendstof/eat-performance-Coco-Cranberry_g4wl1r.png"
   },
   {
     "brand": "eat performance",
     "flavor": "Dattel Nuss",
     "tags": ["noaddedcoloring", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 1.2,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Dattelnuss_d5nbkx.png",
-    "pictureheight": 223,
-    "id": 3
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Dattelnuss_d5nbkx.png"
   },
   {
     "brand": "eat performance",
@@ -49,10 +43,8 @@
       "ketogenic"
     ],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 1.8,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Feige-Banane_mvi1qh.png",
-    "pictureheight": 218,
-    "id": 4
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Feige-Banane_mvi1qh.png"
   },
   {
     "brand": "eat performance",
@@ -73,20 +65,16 @@
       "ketogenic"
     ],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Sonnige-Aprikose_w4icgv.png",
-    "pictureheight": 222,
-    "id": 6
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Sonnige-Aprikose_w4icgv.png"
   },
   {
     "brand": "nucao",
     "flavor": "Cashew Vanille",
     "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.2,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Cashew-Vanille_c28hyh.png",
-    "pictureheight": 200,
-    "id": 7
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Cashew-Vanille_c28hyh.png"
   },
   {
     "brand": "nucao",
@@ -107,10 +95,8 @@
       "ketogenic"
     ],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/nucao-Cocos-Zimt_lxbivb.png",
-    "pictureheight": 201,
-    "id": 8
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/nucao-Cocos-Zimt_lxbivb.png"
   },
   {
     "brand": "nucao",
@@ -132,20 +118,16 @@
       "ketogenic"
     ],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.4,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Macadamia-Chai_gizvym.png",
-    "pictureheight": 200,
-    "id": 10
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Macadamia-Chai_gizvym.png"
   },
   {
     "brand": "nucao",
     "flavor": "Wilde Beere",
     "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Wilde-Beere_r2nnmq.png",
-    "pictureheight": 199,
-    "id": 11
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Wilde-Beere_r2nnmq.png"
   },
   {
     "brand": "The Primal Pantry",
@@ -153,19 +135,15 @@
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
     "price": 1.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Acai-Berry-Superseed_cnd2mg.png",
-    "pictureheight": 190,
-    "id": 12
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Acai-Berry-Superseed_cnd2mg.png"
   },
   {
     "brand": "The Primal Pantry",
     "flavor": "Almond Cashew",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Almond-Chashew_qrjkh0.png",
-    "pictureheight": 192,
-    "id": 13
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Almond-Chashew_qrjkh0.png"
   },
   {
     "brand": "The Primal Pantry",
@@ -187,50 +165,40 @@
       "ketogenic"
     ],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.4,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Apple-Pecan_r9nn9v.png",
-    "pictureheight": 203,
-    "id": 14
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/primal-pantry-Apple-Pecan_r9nn9v.png"
   },
   {
     "brand": "The Primal Pantry",
     "flavor": "Coconut & Macadamia",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.7,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Coconut-Macadamia_ouwbbx.png",
-    "pictureheight": 195,
-    "id": 16
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Coconut-Macadamia_ouwbbx.png"
   },
   {
     "brand": "The Primal Pantry",
     "flavor": "Lemon & Poppy Seed",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Lemon-Poppy-Seed_ybkdhz.png",
-    "pictureheight": 204,
-    "id": 18
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Lemon-Poppy-Seed_ybkdhz.png"
   },
   {
     "brand": "Raw Energy",
     "flavor": "Banana & Coconut",
     "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Banana-Coconut_c5zz1m.png",
-    "pictureheight": 210,
-    "id": 26
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Banana-Coconut_c5zz1m.png"
   },
   {
     "brand": "nucao",
     "flavor": "Haselnuss",
     "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 3.2,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Haselnuss_pug7ra.png",
-    "pictureheight": 198,
-    "id": 9
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469932/braendstof/nucao-Haselnuss_pug7ra.png"
   },
   {
     "brand": "The Primal Pantry",
@@ -250,58 +218,46 @@
     ],
     "description": "Fruchtiger Geschmack mit leichter Süße. Ehrliche Zutaten, kalt gepresst und ohne Zusätze.",
     "price": 1.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Brazil-Nut-Cherry_epsfbq.png",
-    "pictureheight": 197,
-    "id": 15
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Brazil-Nut-Cherry_epsfbq.png"
   },
   {
     "brand": "eat performance",
     "flavor": "Nussknacker",
     "tags": ["raw", "lowsugar", "soyfree", "bio"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Nussknacker_dnupml.png",
-    "pictureheight": 217,
-    "id": 5
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469931/braendstof/eat-performance-Nussknacker_dnupml.png"
   },
   {
     "brand": "Raw Energy",
     "flavor": "Apricot & Cashew",
     "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.5,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Apricot-Cashew_evdtez.png",
-    "pictureheight": 210,
-    "id": 25
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Apricot-Cashew_evdtez.png"
   },
   {
     "brand": "Raw Energy",
     "flavor": "Maracuja & Coconut",
     "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Maracuja-Coconut_vkz6jv.png",
-    "pictureheight": 211,
-    "id": 27
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469935/braendstof/raw-energy-Maracuja-Coconut_vkz6jv.png"
   },
   {
     "brand": "The Primal Pantry",
     "flavor": "Hazelnut & Cocoa",
     "tags": ["paleo", "raw", "glutenfree", "bio", "organic"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 2.4,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Hazelnut-Cocoa_z6vesf.png",
-    "pictureheight": 194,
-    "id": 17
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469933/braendstof/primal-pantry-Hazelnut-Cocoa_z6vesf.png"
   },
   {
     "brand": "Raw Energy",
     "flavor": "Peanuts & Dates",
     "tags": ["bio", "lowsugar", "soyfree", "organic", "noaddedcoloring"],
     "description": "Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor et.",
-    "price": 3.0,
-    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Peanuts-Dates_hfjny9.png",
-    "pictureheight": 210,
-    "id": 28
+    "price": 1.5,
+    "picture": "https://res.cloudinary.com/sygnal/image/upload/v1570469934/braendstof/raw-energy-Peanuts-Dates_hfjny9.png"
   }
 ]

@@ -1,22 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
-import tags from './tags.json'
 import PropTypes from 'prop-types'
+import { getSnackTags } from './SnacksDataServices'
 
 SnackTags.propTypes = {
   currentSnack: PropTypes.shape({ tags: PropTypes.array.isRequired }).isRequired
 }
 
 export default function SnackTags({ currentSnack }) {
+  const [tags, setTags] = useState([])
+
+  useEffect(() => {
+    getSnackTags().then(response => {
+      let entries = Object.entries(response[0])
+      // console.log('useEffect SnackTags', response)
+      setTags(entries)
+    })
+  }, [])
+
   return (
     <TagListStyled>
-      {Object.entries(tags).map(([key, value]) => {
-        return currentSnack.tags.includes(key) ? (
+      {tags.map(([key, value]) =>
+        currentSnack.tags.includes(key) ? (
           <ActiveTagStyled key={key}>{value}</ActiveTagStyled>
         ) : (
           <PassiveTagStyled key={key}>{value}</PassiveTagStyled>
         )
-      })}
+      )}
     </TagListStyled>
   )
 }
