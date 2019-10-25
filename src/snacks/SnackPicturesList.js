@@ -46,4 +46,8 @@ const SunbeamsStyled = styled.img`
 
 const PictureListStyled = styled.section`
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  flex-wrap: nowrap;
 `
