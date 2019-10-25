@@ -25,5 +25,5 @@ const GridStyled = styled.main`
   margin-top: 32px;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 260px;
+  margin-bottom: 270px;
 `
