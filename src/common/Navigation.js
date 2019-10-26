@@ -41,6 +41,7 @@ const DotStyledRight = styled.div`
   z-index: 20;
   top: 2rem;
   right: 2rem;
+  cursor: pointer;
 `
 
 const DotStyledLeft = styled.div`
@@ -57,4 +58,5 @@ const DotStyledLeft = styled.div`
   z-index: 20;
   top: 2rem;
   left: 2rem;
+  cursor: pointer;
 `
