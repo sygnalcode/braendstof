@@ -144,6 +144,7 @@ const NumberStyled = styled.div`
   color: ${props => (props.active ? 'white' : 'rgb(35, 35, 35)')};
   border: 2px solid rgb(35, 35, 35);
   background: ${props => (props.active ? 'rgb(35, 35, 35)' : 'transparent')};
+  cursor: pointer;
 `
 
 const PriceStyled = styled.div`
@@ -165,9 +166,12 @@ const BuyBtn = styled.button`
   border-radius: 30px;
   border: 2px solid rgba(35, 35, 35, 1);
   font-size: 1.5rem;
+  cursor: pointer;
   :disabled {
-    background-color: #999;
-    display: none;
+    background-color: transparent;
+    border: 2px solid #ddcf3c;
+    color: #ddcf3c;
+    cursor: default;
   }
   :focus {
     outline: none;
