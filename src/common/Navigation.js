@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { NavLink } from 'react-router-dom'
-import { ChevronLeft } from 'styled-icons/boxicons-regular/ChevronLeft'
-import { ChevronRight } from 'styled-icons/boxicons-regular/ChevronRight'
+import NaviBtn from './NaviBtn'
 
 export default function Navigation({ currentPageState }) {
   const [currentPage, setCurrentPage] = currentPageState
@@ -11,52 +10,30 @@ export default function Navigation({ currentPageState }) {
     <>
       {currentPage === 0 ? (
         <NavLink to="/snacks" onClick={() => setCurrentPage(1)}>
-          <DotStyledRight>
-            Snacks
-            <ChevronRight size="40" title="Snacks page" />
-          </DotStyledRight>
+          <SnacksBtnStyled text={'Snacks'} icon={'ChevronRight'} />
         </NavLink>
       ) : (
         <NavLink to="/" onClick={() => setCurrentPage(0)}>
-          <DotStyledLeft>
-            <ChevronLeft size="40" title="User page" />
-          </DotStyledLeft>
+          <BackBtnStyled text={''} icon={'ChevronLeft'} />
         </NavLink>
       )}
     </>
   )
 }
 
-const DotStyledRight = styled.div`
-  height: 60px;
-  width: 160px;
-  background-color: #fff379;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
-  display: inline-block;
+const SnacksBtnStyled = styled(NaviBtn)`
   position: fixed;
-  text-align: center;
-  padding-top: 11px;
-  font-size: 1.5rem;
+  top: 32px;
+  right: 32px;
+  width: 160px;
   z-index: 20;
-  top: 2rem;
-  right: 2rem;
-  cursor: pointer;
 `
 
-const DotStyledLeft = styled.div`
+const BackBtnStyled = styled(NaviBtn)`
+  position: fixed;
+  top: 32px;
+  left: 32px;
   height: 60px;
   width: 60px;
-  background-color: #fff379;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  display: inline-block;
-  position: fixed;
-  text-align: center;
-  padding-top: 11px;
-  font-size: 1.5rem;
   z-index: 20;
-  top: 2rem;
-  left: 2rem;
-  cursor: pointer;
 `
