@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
-import { patchUser, getSingleUser } from './UsersDataServices'
+import { patchUser, getSingleUser } from './usersDataServices'
 
 const price = 1.5
 

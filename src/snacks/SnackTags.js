@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import { getSnackTags } from './SnacksDataServices'
+import { getSnackTags } from './snacksDataServices'
 
 SnackTags.propTypes = {
   currentSnack: PropTypes.shape({ tags: PropTypes.array.isRequired }).isRequired

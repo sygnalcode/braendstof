@@ -4,8 +4,8 @@ import styled from 'styled-components/macro'
 import Navigation from './common/Navigation'
 import SnackPage from './snacks/SnackPage'
 import UserPage from './users/UserPage'
-import { getUsers } from './users/UsersDataServices'
-import { getSnacks } from './snacks/SnacksDataServices'
+import { getUsers } from './users/usersDataServices'
+import { getSnacks } from './snacks/snacksDataServices'
 
 export default function App() {
   const [scrollYPosition, setScrollYPosition] = useState(0)
