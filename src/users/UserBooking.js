@@ -85,9 +85,9 @@ export default function UserBooking({ activeUser }) {
           </NumberStyled>
         </Item>
         <Item>
-          <BuyBtn onClick={handleBuyClick} disabled={!activeUser}>
+          <BuyBtnStyled onClick={handleBuyClick} disabled={!activeUser}>
             Kaufen
-          </BuyBtn>
+          </BuyBtnStyled>
         </Item>
       </ContentGridStyled>
     </BackgroundStyled>
@@ -144,6 +144,7 @@ const NumberStyled = styled.div`
   color: ${props => (props.active ? 'white' : 'rgb(35, 35, 35)')};
   border: 2px solid rgb(35, 35, 35);
   background: ${props => (props.active ? 'rgb(35, 35, 35)' : 'transparent')};
+  cursor: pointer;
 `
 
 const PriceStyled = styled.div`
@@ -153,7 +154,7 @@ const PriceStyled = styled.div`
   font-size: 3.3rem;
   color: rgba(35, 35, 35, 1);
 `
-const BuyBtn = styled.button`
+const BuyBtnStyled = styled.button`
   position: absolute;
   right: 0px;
   width: 160px;
@@ -161,13 +162,16 @@ const BuyBtn = styled.button`
   background-color: rgba(35, 35, 35, 1);
   /* ${({ activeUser }) => (activeUser ? '0' : '-100%')} */
   color: white;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02rem;
   border-radius: 30px;
   border: 2px solid rgba(35, 35, 35, 1);
   font-size: 1.5rem;
+  cursor: pointer;
   :disabled {
-    background-color: #999;
-    display: none;
+    background-color: transparent;
+    border: 2px solid #ddcf3c;
+    color: #ddcf3c;
+    cursor: default;
   }
   :focus {
     outline: none;

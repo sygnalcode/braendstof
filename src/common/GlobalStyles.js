@@ -43,7 +43,6 @@ p {
   color: #232323;
   padding: 0;
   margin: 0;
-  hyphens: auto;
 }
 `
 

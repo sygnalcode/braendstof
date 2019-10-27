@@ -13,7 +13,6 @@ export default function SnackTags({ currentSnack }) {
   useEffect(() => {
     getSnackTags().then(response => {
       let entries = Object.entries(response[0])
-      // console.log('useEffect SnackTags', response)
       setTags(entries)
     })
   }, [])

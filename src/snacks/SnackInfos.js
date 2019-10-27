@@ -18,7 +18,6 @@ SnackInfos.propTypes = {
 
 export default function SnackInfos({ snacksData, scrollYPosition }) {
   const [currentSnack, setCurrentSnack] = useState(null)
-  console.log('snacksData', snacksData)
   useLayoutEffect(() => {
     handleScrollEvent(scrollYPosition)
   })
