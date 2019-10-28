@@ -35,7 +35,7 @@ const GridStyled = styled.main`
   justify-content: space-between;
   align-content: flex-start;
   align-self: flex-start;
-  margin-top: 32px;
+  margin-top: 90px;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 270px;
