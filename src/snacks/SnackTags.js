@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components/macro'
 import PropTypes from 'prop-types'
-import { getSnackTags } from './SnacksDataServices'
+import { getSnackTags } from './snacksDataServices'
 
 SnackTags.propTypes = {
   currentSnack: PropTypes.shape({ tags: PropTypes.array.isRequired }).isRequired
@@ -19,7 +19,7 @@ export default function SnackTags({ currentSnack }) {
 
   return (
     <TagListStyled>
-      {tags.map(([key, value]) =>
+      {tags.slice(1).map(([key, value]) =>
         currentSnack.tags.includes(key) ? (
           <ActiveTagStyled key={key}>{value}</ActiveTagStyled>
         ) : (
@@ -39,7 +39,7 @@ const TagListStyled = styled.ul`
     font-size: 1rem;
     line-height: 1.6rem;
     text-transform: uppercase;
-    margin-right: 1.25rem;
+    margin-right: 18px;
     font-weight: bold;
   }
 `

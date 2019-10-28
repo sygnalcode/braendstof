@@ -25,7 +25,7 @@ const SnacksBtnStyled = styled(NaviBtn)`
   position: fixed;
   top: 32px;
   right: 32px;
-  width: 160px;
+  width: 155px;
   z-index: 20;
 `
 

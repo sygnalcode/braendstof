@@ -35,6 +35,7 @@ export default function SnackPicturesList({ snacksData, setScrollYPosition }) {
 const SpacerGridStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  /* grid-template-rows: auto 690px; */
   grid-template-rows: 340px auto 690px;
 `
 

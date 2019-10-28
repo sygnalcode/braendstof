@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import styled from 'styled-components/macro'
-import { patchUser, getSingleUser } from './UsersDataServices'
+import { patchUser, getSingleUser } from './usersDataServices'
+import Modal from '../common/Modal'
+import useModal from '../common/useModal'
 
 const price = 1.5
 
 export default function UserBooking({ activeUser }) {
   const [snackSum, setSnackSum] = useState(price)
   const [activeBtn, setActiveBtn] = useState(1)
+  const { isOpen, toggle } = useModal()
 
   return (
     <BackgroundStyled>
@@ -83,9 +86,16 @@ export default function UserBooking({ activeUser }) {
           >
             10
           </NumberStyled>
+          <Modal
+            isOpen={isOpen}
+            hide={toggle}
+            activeUser={activeUser}
+            snackSum={snackSum}
+            onHandleBuyClick={handleBuyClick}
+          />
         </Item>
         <Item>
-          <BuyBtnStyled onClick={handleBuyClick} disabled={!activeUser}>
+          <BuyBtnStyled onClick={toggle} disabled={!activeUser}>
             Kaufen
           </BuyBtnStyled>
         </Item>
@@ -101,6 +111,7 @@ export default function UserBooking({ activeUser }) {
   async function handleBuyClick() {
     const { balance } = await getSingleUser(activeUser)
     patchUser(activeUser, { balance: balance + snackSum })
+    toggle(!isOpen)
   }
 }
 
@@ -160,7 +171,6 @@ const BuyBtnStyled = styled.button`
   width: 160px;
   height: 60px;
   background-color: rgba(35, 35, 35, 1);
-  /* ${({ activeUser }) => (activeUser ? '0' : '-100%')} */
   color: white;
   letter-spacing: 0.02rem;
   border-radius: 30px;

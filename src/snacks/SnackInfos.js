@@ -27,7 +27,7 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
   }, [snacksData])
 
   function handleScrollEvent(scrollYPosition) {
-    const index = Math.round(scrollYPosition / 240)
+    const index = Math.round(scrollYPosition / 260)
     setCurrentSnack(snacksData[index])
   }
 
