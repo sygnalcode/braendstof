@@ -54,7 +54,7 @@ export default function SnackInfos({ snacksData, scrollYPosition }) {
 
 const FooterContentStyled = styled.section`
   display: grid;
-  margin: 1rem 2rem 0 2rem;
+  margin: 16px 32px 0 32px;
 `
 
 const FooterBackgroundStyled = styled.div`
@@ -89,7 +89,7 @@ const HeadlineBackgroundStyled = styled.div`
   height: 33px;
   z-index: -10;
   left: -80px;
-  top: 1rem;
+  top: 16px;
 `
 
 const DescriptionAndPriceStyled = styled.div`

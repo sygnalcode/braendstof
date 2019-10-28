@@ -27,12 +27,12 @@ h1 {
   display: inline-block;
   width: auto;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   background: #232323;
   padding: 5px 12px 5px 0;
-  margin: 1rem 0 0 2rem;
+  margin: 16px 0 0 32px;
 }
 
 h2 {
