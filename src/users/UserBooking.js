@@ -6,7 +6,7 @@ import useModal from '../common/useModal'
 
 const price = 1.5
 
-export default function UserBooking({ activeUser }) {
+export default function UserBooking({ activeUser, setActiveUser }) {
   const [snackSum, setSnackSum] = useState(price)
   const [activeBtn, setActiveBtn] = useState(1)
   const { isOpen, toggle } = useModal()
@@ -112,6 +112,8 @@ export default function UserBooking({ activeUser }) {
     const { balance } = await getSingleUser(activeUser)
     patchUser(activeUser, { balance: balance + snackSum })
     toggle(!isOpen)
+    setActiveUser(null)
+    setActiveBtn(1)
   }
 }
 

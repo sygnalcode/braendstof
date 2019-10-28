@@ -24,7 +24,7 @@ export default function UserPage({ userData }) {
           )
         })}
       </GridStyled>
-      <UserBooking activeUser={activeUser} />
+      <UserBooking activeUser={activeUser} setActiveUser={setActiveUser} />
     </>
   )
 }
