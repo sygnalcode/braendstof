@@ -114,6 +114,7 @@ export default function UserBooking({ activeUser, setActiveUser }) {
     toggle(!isOpen)
     setActiveUser(null)
     setActiveBtn(1)
+    setSnackSum(price)
   }
 }
 
