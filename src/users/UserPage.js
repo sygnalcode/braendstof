@@ -7,9 +7,7 @@ export default function UserPage({ userData }) {
   const [activeUser, setActiveUser] = useState(null)
 
   function handleClick(userId) {
-    activeUser === userId
-      ? setActiveUser(null)
-      : setActiveUser(userId)
+    activeUser === userId ? setActiveUser(null) : setActiveUser(userId)
   }
 
   return (
