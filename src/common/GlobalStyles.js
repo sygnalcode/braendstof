@@ -14,6 +14,15 @@ body {
   background: #000;
 }
 
+input,
+textarea,
+button,
+select,
+div,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 h1 {
   display: inline-block;
   width: auto;
