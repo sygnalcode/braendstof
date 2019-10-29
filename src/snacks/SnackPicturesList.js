@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components/macro'
 import SnackPicture from './SnackPicture'
 import PropTypes from 'prop-types'
-import Sunbeams from '../img/sonnenstrahlen.png'
+import Sunbeams from '../img/sonnenstrahlen-1166x525.png'
 
 SnackPicturesList.propTypes = {
   setScrollYPosition: PropTypes.func.isRequired,
