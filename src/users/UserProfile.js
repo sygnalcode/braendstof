@@ -17,7 +17,7 @@ export default function UserProfile({ data, onClick, active }) {
 const BackgroundStyled = styled.div`
   position: relative;
   width: 240px;
-  height: 240px;
+  height: 212px;
   padding: 10px;
   margin-top: 7px;
   background: transparent;

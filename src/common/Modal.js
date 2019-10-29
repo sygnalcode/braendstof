@@ -85,7 +85,7 @@ const ModalHeaderStyled = styled.div`
 const ModalCloseButtonStyled = styled.button`
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1rem;
   color: rgba(35, 35, 35, 1);
   background-color: transparent;
   cursor: pointer;

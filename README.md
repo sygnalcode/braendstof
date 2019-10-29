@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This app was developed as an non-commercial exercise during the [Web Development Bootcamp](https://www.neuefische.de/weiterbildung/web-development) offered by [neue fische GmbH](https://www.neuefische.de) in fall 2019. Special thanks fly out to our Head Coach [Jerry](https://badabam.de/)!
+This non-commercial app was developed as the final project during the [Web Development Bootcamp](https://www.neuefische.de/weiterbildung/web-development) offered by [neue fische GmbH](https://www.neuefische.de) in October 2019. Special thanks fly out to our Head Coach [Jerry](https://badabam.de/)!
 
 ## Intended use
 
@@ -10,8 +10,8 @@ The app is designed to be used on a 10,1" android tablet next to the office snac
 
 ## Preview
 
-<img src="./src/img/2019-10-28-brændstof-01.jpg" alt="brændstof preview 1" width="440"/>
-<img src="./src/img/2019-10-28-brændstof-02.jpg" alt="brændstof preview 2" width="440"/>
+<img src="./src/img/2019-10-28-brændstof-01.jpg" alt="brændstof preview 1" width="400"/>
+<img src="./src/img/2019-10-28-brændstof-02.jpg" alt="brændstof preview 2" width="400"/>
 
 ## Tech stack
 
